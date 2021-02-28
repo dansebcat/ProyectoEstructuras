@@ -11,20 +11,30 @@ package source;
  */
 public class Nodo {
     
-    private Nodo enlace;
+    private Nodo siguiente;
+    private Nodo anterior;
     private Equipo equipo;
 
     public Nodo(Equipo equipo) {
         this.equipo = equipo;
-        enlace=null;
+        siguiente=null;
     }
 
-    public Nodo getEnlace() {
-        return enlace;
+    public Nodo getSiguiente() {
+        return siguiente;
     }
+
+    public Nodo getAnterior() {
+        return anterior;
+    }
+
+    public void setAnterior(Nodo anterior) {
+        this.anterior = anterior;
+    }
+    
 
     public void setEnlace(Nodo enlace) {
-        this.enlace = enlace;
+        this.siguiente = enlace;
     }
 
     public Equipo getEquipo() {

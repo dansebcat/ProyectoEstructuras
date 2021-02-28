@@ -21,8 +21,8 @@ public abstract class Grupo {
     }
     
     public void ordenarGrupo(Nodo nodo){
-        for(Nodo q=nodo;q.getEnlace()!=null;q=q.getEnlace()){
-            for(Nodo p=q.getEnlace();p!=null;p=p.getEnlace()){
+        for(Nodo q=nodo;q.getSiguiente()!=null;q=q.getSiguiente()){
+            for(Nodo p=q.getSiguiente();p!=null;p=p.getSiguiente()){
                 if(q.getEquipo().getPuntajes()<p.getEquipo().getPuntajes()){
                    //Intercambiar Lista Doblemente Enlazada. 
                 }
