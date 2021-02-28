@@ -9,9 +9,9 @@ import java.util.ArrayList;
  */
 public class ListaEquipos {
     
-    static Equipo[] listaEquipos= new Equipo[32];
+    public static Equipo[] listaEquipos= new Equipo[32];
 
-    public ListaEquipos() {
+    public static void ListaEquipos() {
         listaEquipos[0]=  new Equipo("Rusia");
         listaEquipos[1]=  new Equipo("Arabia");
         listaEquipos[2]=  new Equipo("Egipto");

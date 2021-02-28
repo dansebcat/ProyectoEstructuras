@@ -2,6 +2,8 @@ package source;
 
 import demoproyecto.Principal;
 import demoproyecto.VentanaAzar;
+
+import demoproyecto.VentanaSeleccionarModo;
 import javax.swing.JList;
 
 /**
@@ -15,7 +17,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ListaEquipos listaEquipos = new ListaEquipos();
+     /*   ListaEquipos listaEquipos = new ListaEquipos();
         Grupo grupoA = new Grupo('A');
         grupoA.crearAzar();
         Grupo grupoB = new Grupo('B');
@@ -32,23 +34,19 @@ public class Main {
         grupoG.crearAzar();
         Grupo grupoH = new Grupo('H');
         grupoH.crearAzar();
-        
+        VentanaAzar ventanaAzar = new VentanaAzar();
+        VentanaSeleccionarModo secMod = new VentanaSeleccionarModo();
+        secMod.setVisible(true);
 
-       VentanaAzar ventanaAzar = new VentanaAzar();
         ventanaAzar.setVisible(true);
-
-       ventanaAzar.jlGrupo1.setListData(grupoA.crearString());
-       ventanaAzar.jlGrupo2.setListData(grupoB.crearString());
+        ventanaAzar.jlGrupo1.setListData(grupoA.crearString());
+        ventanaAzar.jlGrupo2.setListData(grupoB.crearString());
         ventanaAzar.jlGrupo3.setListData(grupoC.crearString());
-       ventanaAzar.jlGrupo4.setListData(grupoD.crearString());
+        ventanaAzar.jlGrupo4.setListData(grupoD.crearString());
         ventanaAzar.jlGrupo5.setListData(grupoE.crearString());
-       ventanaAzar.jlGrupo6.setListData(grupoF.crearString());
+        ventanaAzar.jlGrupo6.setListData(grupoF.crearString());
         ventanaAzar.jlGrupo7.setListData(grupoG.crearString());
-       ventanaAzar.jlGrupo8.setListData(grupoH.crearString());
-   
-       
-       
-       
+        ventanaAzar.jlGrupo8.setListData(grupoH.crearString());*/
 
     }
 

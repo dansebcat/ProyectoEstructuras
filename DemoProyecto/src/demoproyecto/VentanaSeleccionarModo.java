@@ -80,6 +80,7 @@ public class VentanaSeleccionarModo extends javax.swing.JFrame {
         VentanaAzar azar = new VentanaAzar();
         azar.setVisible(true);
         this.setVisible(false);
+     
     }//GEN-LAST:event_btnIngresoAzarActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed

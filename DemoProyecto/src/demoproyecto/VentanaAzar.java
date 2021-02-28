@@ -1,7 +1,7 @@
 
 package demoproyecto;
-import source.Grupo;
-import source.Main;
+
+import source.*;
 /**
  *
  * @author E2
@@ -13,7 +13,8 @@ public class VentanaAzar extends javax.swing.JFrame {
      */
     public VentanaAzar() {
         initComponents();
-        
+        crearGrupos.iniciarCrearGrupos();
+        jlGrupo1.setListData(crearGrupos.grupoA.crearString());
     }
    
     /**
