@@ -8,14 +8,14 @@ package source;
 public class Equipo {
     
     String Nombre;
-    int puntajes;
-    int partidosJugados;
-    int patidosGanados;
-    int partidosPerdidos;
-    int partidosEmpatados;
-    int golesFavor;
-    int golesContra;
-    int diferenciagoles;
+    private int puntajes;
+    private int partidosJugados;
+    private int patidosGanados;
+    private int partidosPerdidos;
+    private int partidosEmpatados;
+    private int golesFavor;
+    private int golesContra;
+    private int diferenciagoles;
 
     public Equipo(String Nombre) {
         this.Nombre = Nombre;
