@@ -1,5 +1,6 @@
 
 package demoproyecto;
+import source.Grupo;
 import source.Main;
 /**
  *
@@ -12,6 +13,7 @@ public class VentanaAzar extends javax.swing.JFrame {
      */
     public VentanaAzar() {
         initComponents();
+        
     }
    
     /**
@@ -34,7 +36,7 @@ public class VentanaAzar extends javax.swing.JFrame {
         jScrollPane5 = new javax.swing.JScrollPane();
         jlGrupo5 = new javax.swing.JList<>();
         jScrollPane6 = new javax.swing.JScrollPane();
-        jlgrupo6 = new javax.swing.JList<>();
+        jlGrupo6 = new javax.swing.JList<>();
         jScrollPane7 = new javax.swing.JScrollPane();
         jlGrupo7 = new javax.swing.JList<>();
         jScrollPane8 = new javax.swing.JScrollPane();
@@ -57,7 +59,7 @@ public class VentanaAzar extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jlGrupo1);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(30, 20, 160, 100);
+        jScrollPane1.setBounds(30, 10, 160, 100);
 
         jlGrupo2.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -79,7 +81,7 @@ public class VentanaAzar extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jlGrupo3);
 
         getContentPane().add(jScrollPane3);
-        jScrollPane3.setBounds(30, 240, 160, 100);
+        jScrollPane3.setBounds(40, 240, 160, 100);
 
         jlGrupo4.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -103,13 +105,13 @@ public class VentanaAzar extends javax.swing.JFrame {
         getContentPane().add(jScrollPane5);
         jScrollPane5.setBounds(560, 20, 160, 100);
 
-        jlgrupo6.setModel(new javax.swing.AbstractListModel<String>() {
+        jlGrupo6.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jlgrupo6.setOpaque(false);
-        jScrollPane6.setViewportView(jlgrupo6);
+        jlGrupo6.setOpaque(false);
+        jScrollPane6.setViewportView(jlGrupo6);
 
         getContentPane().add(jScrollPane6);
         jScrollPane6.setBounds(560, 130, 160, 100);
@@ -209,6 +211,7 @@ public class VentanaAzar extends javax.swing.JFrame {
                 new VentanaAzar().setVisible(true);
             }
         });
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -216,20 +219,20 @@ public class VentanaAzar extends javax.swing.JFrame {
     private javax.swing.JButton btnRegresar;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
+    public javax.swing.JScrollPane jScrollPane2;
+    public javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
-    private javax.swing.JList<String> jlGrupo1;
-    private javax.swing.JList<String> jlGrupo2;
-    private javax.swing.JList<String> jlGrupo3;
-    private javax.swing.JList<String> jlGrupo4;
-    private javax.swing.JList<String> jlGrupo5;
-    private javax.swing.JList<String> jlGrupo7;
-    private javax.swing.JList<String> jlGrupo8;
-    private javax.swing.JList<String> jlgrupo6;
+    public javax.swing.JList<String> jlGrupo1;
+    public javax.swing.JList<String> jlGrupo2;
+    public javax.swing.JList<String> jlGrupo3;
+    public javax.swing.JList<String> jlGrupo4;
+    public javax.swing.JList<String> jlGrupo5;
+    public javax.swing.JList<String> jlGrupo6;
+    public javax.swing.JList<String> jlGrupo7;
+    public javax.swing.JList<String> jlGrupo8;
     // End of variables declaration//GEN-END:variables
 }
