@@ -57,7 +57,7 @@ public class VentanaManual extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         jlPaises.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "1. Rusia", "2. Brasil", "3. Irán", "4. Japón", "5. México", "6. Bélgica", "7. Corea del Sur", "8. Arabia Saudí", "9.  Inglaterra", "10. Alemania", "11. España", "12. Nigeria", "13. Costa Rica", "14. Egipto", "15. Polonia", "16. Serbia", "17. Francia", "18. Portugal", "19. Uruguay", "20. Colombia", "21. Argentina", "22. Panamá", "23. Senegal", "24. Marruecos", "25. Túnez", "26. Suiza", "27. Croacia", "28. Suecia", "29. Dinamarca", "30. Australia", "31. Perú", "32.  Islandia", " " };
+            String[] strings = { " " };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -69,93 +69,53 @@ public class VentanaManual extends javax.swing.JFrame {
 
         jScrollPane2.setOpaque(false);
 
-        jlGrupo1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
         jlGrupo1.setOpaque(false);
         jScrollPane2.setViewportView(jlGrupo1);
 
         getContentPane().add(jScrollPane2);
         jScrollPane2.setBounds(280, 20, 140, 90);
 
-        jlGrupo2.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
         jlGrupo2.setOpaque(false);
         jScrollPane3.setViewportView(jlGrupo2);
 
         getContentPane().add(jScrollPane3);
         jScrollPane3.setBounds(440, 20, 150, 90);
 
-        jlGrupo3.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
         jlGrupo3.setOpaque(false);
         jScrollPane4.setViewportView(jlGrupo3);
 
         getContentPane().add(jScrollPane4);
         jScrollPane4.setBounds(610, 20, 150, 90);
 
-        jlGrupo4.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
         jlGrupo4.setOpaque(false);
         jScrollPane5.setViewportView(jlGrupo4);
 
         getContentPane().add(jScrollPane5);
         jScrollPane5.setBounds(280, 150, 140, 90);
 
-        jlGrupo5.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
         jlGrupo5.setOpaque(false);
         jScrollPane6.setViewportView(jlGrupo5);
 
         getContentPane().add(jScrollPane6);
         jScrollPane6.setBounds(440, 150, 150, 90);
 
-        jlGrupo6.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
         jlGrupo6.setOpaque(false);
         jScrollPane7.setViewportView(jlGrupo6);
 
         getContentPane().add(jScrollPane7);
         jScrollPane7.setBounds(610, 150, 150, 90);
 
-        jlGrupo7.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
         jlGrupo7.setOpaque(false);
         jScrollPane8.setViewportView(jlGrupo7);
 
         getContentPane().add(jScrollPane8);
         jScrollPane8.setBounds(280, 280, 140, 90);
 
-        jlGrupo8.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
         jlGrupo8.setOpaque(false);
         jScrollPane9.setViewportView(jlGrupo8);
 
         getContentPane().add(jScrollPane9);
-        jScrollPane9.setBounds(450, 280, 150, 90);
+        jScrollPane9.setBounds(440, 280, 150, 90);
 
         btnRegresar.setText("REGRESAR");
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {

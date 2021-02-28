@@ -43,40 +43,8 @@
         <Component class="javax.swing.JList" name="jlPaises">
           <Properties>
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-              <StringArray count="33">
-                <StringItem index="0" value="1. Rusia"/>
-                <StringItem index="1" value="2. Brasil"/>
-                <StringItem index="2" value="3. Ir&#xe1;n"/>
-                <StringItem index="3" value="4. Jap&#xf3;n"/>
-                <StringItem index="4" value="5. M&#xe9;xico"/>
-                <StringItem index="5" value="6. B&#xe9;lgica"/>
-                <StringItem index="6" value="7. Corea del Sur"/>
-                <StringItem index="7" value="8. Arabia Saud&#xed;"/>
-                <StringItem index="8" value="9.  Inglaterra"/>
-                <StringItem index="9" value="10. Alemania"/>
-                <StringItem index="10" value="11. Espa&#xf1;a"/>
-                <StringItem index="11" value="12. Nigeria"/>
-                <StringItem index="12" value="13. Costa Rica"/>
-                <StringItem index="13" value="14. Egipto"/>
-                <StringItem index="14" value="15. Polonia"/>
-                <StringItem index="15" value="16. Serbia"/>
-                <StringItem index="16" value="17. Francia"/>
-                <StringItem index="17" value="18. Portugal"/>
-                <StringItem index="18" value="19. Uruguay"/>
-                <StringItem index="19" value="20. Colombia"/>
-                <StringItem index="20" value="21. Argentina"/>
-                <StringItem index="21" value="22. Panam&#xe1;"/>
-                <StringItem index="22" value="23. Senegal"/>
-                <StringItem index="23" value="24. Marruecos"/>
-                <StringItem index="24" value="25. T&#xfa;nez"/>
-                <StringItem index="25" value="26. Suiza"/>
-                <StringItem index="26" value="27. Croacia"/>
-                <StringItem index="27" value="28. Suecia"/>
-                <StringItem index="28" value="29. Dinamarca"/>
-                <StringItem index="29" value="30. Australia"/>
-                <StringItem index="30" value="31. Per&#xfa;"/>
-                <StringItem index="31" value="32.  Islandia"/>
-                <StringItem index="32" value=" "/>
+              <StringArray count="1">
+                <StringItem index="0" value=" "/>
               </StringArray>
             </Property>
             <Property name="opaque" type="boolean" value="false"/>
@@ -105,12 +73,7 @@
         <Component class="javax.swing.JList" name="jlGrupo1">
           <Properties>
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
-              </StringArray>
+              <StringArray count="0"/>
             </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
@@ -135,12 +98,7 @@
         <Component class="javax.swing.JList" name="jlGrupo2">
           <Properties>
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
-              </StringArray>
+              <StringArray count="0"/>
             </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
@@ -165,12 +123,7 @@
         <Component class="javax.swing.JList" name="jlGrupo3">
           <Properties>
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
-              </StringArray>
+              <StringArray count="0"/>
             </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
@@ -195,12 +148,7 @@
         <Component class="javax.swing.JList" name="jlGrupo4">
           <Properties>
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
-              </StringArray>
+              <StringArray count="0"/>
             </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
@@ -225,12 +173,7 @@
         <Component class="javax.swing.JList" name="jlGrupo5">
           <Properties>
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
-              </StringArray>
+              <StringArray count="0"/>
             </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
@@ -255,12 +198,7 @@
         <Component class="javax.swing.JList" name="jlGrupo6">
           <Properties>
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
-              </StringArray>
+              <StringArray count="0"/>
             </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
@@ -285,12 +223,7 @@
         <Component class="javax.swing.JList" name="jlGrupo7">
           <Properties>
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
-              </StringArray>
+              <StringArray count="0"/>
             </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
@@ -306,7 +239,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="450" y="280" width="150" height="90"/>
+          <AbsoluteConstraints x="440" y="280" width="150" height="90"/>
         </Constraint>
       </Constraints>
 
@@ -315,12 +248,7 @@
         <Component class="javax.swing.JList" name="jlGrupo8">
           <Properties>
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
-              </StringArray>
+              <StringArray count="0"/>
             </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
