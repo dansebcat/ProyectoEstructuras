@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,9 +10,40 @@ package source;
  *
  * @author bryan
  */
-public abstract class Grupo {
+public class Grupo {
     char Id;
     Nodo primero;
+
+    public Grupo(char id) {
+        this.Id=id;
+        primero=null;
+    }
+    
+    public void addEquipo(Nodo nodo){
+        if(primero==null){
+            primero=nodo;
+        }else{
+           Nodo q = primero;
+           while(q.getSiguiente()!=null){
+               q=q.getSiguiente();
+           }
+           nodo.setAnterior(q);
+           nodo.setSiguiente(null);
+        }
+    }
+    
+    public void crearAzar(){
+        
+        for (int i = 0; i < 4; i++) {
+            int random = (int) (Math.random() * 33);
+            
+            while (ListaEquipos.listaEquipos[random].isIsSelected()) {
+                random = (int) (Math.random() * 33);
+            }
+            addEquipo(new Nodo(ListaEquipos.listaEquipos[random]));
+            ListaEquipos.listaEquipos[random].setIsSelected(true);
+        }
+    }
     
     public int calcularPuntaje(Nodo nodo){
         int puntajeTotal;

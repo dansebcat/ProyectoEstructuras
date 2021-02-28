@@ -1,4 +1,5 @@
 
+
 package source;
 
 /**
@@ -16,6 +17,7 @@ public class Equipo {
     private int golesFavor;
     private int golesContra;
     private int diferenciagoles;
+    private boolean isSelected;
 
     public Equipo(String Nombre) {
         this.Nombre = Nombre;
@@ -27,6 +29,7 @@ public class Equipo {
         this.golesFavor = 0;
         this.golesContra = 0;
         this.diferenciagoles = 0;
+        isSelected=false;
     }
 
     public String getNombre() {
@@ -100,6 +103,16 @@ public class Equipo {
     public void setDiferenciagoles(int diferenciagoles) {
         this.diferenciagoles = diferenciagoles;
     }
+
+    public boolean isIsSelected() {
+        return isSelected;
+    }
+
+    public void setIsSelected(boolean isSelected) {
+        this.isSelected = isSelected;
+    }
+    
+    
 
     @Override
     public String toString() {

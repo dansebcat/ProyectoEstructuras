@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -33,8 +34,8 @@ public class Nodo {
     }
     
 
-    public void setEnlace(Nodo enlace) {
-        this.siguiente = enlace;
+    public void setSiguiente(Nodo siguiente) {
+        this.siguiente = siguiente;
     }
 
     public Equipo getEquipo() {

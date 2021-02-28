@@ -1,4 +1,3 @@
-
 package source;
 
 import demoproyecto.Principal;
@@ -14,8 +13,13 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ListaEquipos listaEquipos = new ListaEquipos();
         Principal principal = new Principal();
+        Grupo grupoA = new Grupo('A');
+
+
         principal.setVisible(true);
+
     }
-    
+
 }
