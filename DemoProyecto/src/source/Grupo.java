@@ -10,7 +10,7 @@ package source;
  * @author bryan
  */
 public abstract class Grupo {
-    
+    char Id;
     Nodo primero;
     
     public int calcularPuntaje(Nodo nodo){
@@ -34,4 +34,15 @@ public abstract class Grupo {
         
         
     }
+
+    @Override
+    public String toString() {
+        String salida="Equipo\tPtos\tPJ\tPG\tPE\tPP\tDG\n";
+        for (Nodo q = this.primero; q!=null ; q=q.getSiguiente()) {
+            salida+=q.toString()+"\n";
+        }
+        return salida;
+    }
+    
+    
 }

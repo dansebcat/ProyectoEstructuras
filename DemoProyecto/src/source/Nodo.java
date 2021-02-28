@@ -44,6 +44,11 @@ public class Nodo {
     public void setEquipo(Equipo equipo) {
         this.equipo = equipo;
     }
+
+    @Override
+    public String toString() {
+        return getEquipo().toString();
+    }
     
     
 }

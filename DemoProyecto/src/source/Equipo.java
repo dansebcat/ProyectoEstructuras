@@ -101,6 +101,15 @@ public class Equipo {
         this.diferenciagoles = diferenciagoles;
     }
 
+    @Override
+    public String toString() {
+        String salida=Nombre+"\t"+puntajes+"\t"+partidosJugados+"\t"+patidosGanados+"\t"+partidosEmpatados+"\t"+
+                partidosPerdidos+"\t"+diferenciagoles;
+        return salida;
+    }
+    
+    
+
     
     
     
