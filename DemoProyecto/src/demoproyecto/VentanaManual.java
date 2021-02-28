@@ -6,6 +6,7 @@
 package demoproyecto;
 
 import java.awt.Color;
+import java.util.Vector;
 
 /**
  *
@@ -16,8 +17,44 @@ public class VentanaManual extends javax.swing.JFrame {
     /**
      * Creates new form VentanaManual
      */
+    Vector<String> listaEquipos;
+    Vector<String> grupo1;
+    Vector<String> grupo2;
+    Vector<String> grupo3;
+    Vector<String> grupo4;
+    Vector<String> grupo5;
+    Vector<String> grupo6;
+    Vector<String> grupo7;
+    Vector<String> grupo8;
     public VentanaManual() {
         initComponents();
+        listaEquipos = new Vector<String>();
+        grupo1 = new Vector<String>();
+        grupo2 = new Vector<String>();
+        grupo3 = new Vector<String>();
+        grupo4 = new Vector<String>();
+        grupo5 = new Vector<String>();
+        grupo6 = new Vector<String>();
+        grupo7 = new Vector<String>();
+        grupo8 = new Vector<String>();
+        cargarEquipos();
+    }
+    public void cargarEquipos(){
+        listaEquipos.add("Rusia");
+        listaEquipos.add("Rusia");
+        listaEquipos.add("Rusia");
+        listaEquipos.add("Rusia");
+        listaEquipos.add("Rusia");
+        listaEquipos.add("Rusia");
+        listaEquipos.add("Rusia");
+        listaEquipos.add("Rusia");
+        listaEquipos.add("Rusia");
+        listaEquipos.add("Rusia");
+        listaEquipos.add("Rusia");
+        listaEquipos.add("Rusia");
+        
+              
+                
     }
 
     /**
@@ -62,6 +99,11 @@ public class VentanaManual extends javax.swing.JFrame {
             public String getElementAt(int i) { return strings[i]; }
         });
         jlPaises.setOpaque(false);
+        jlPaises.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jlPaisesMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(jlPaises);
 
         getContentPane().add(jScrollPane1);
@@ -154,6 +196,13 @@ public class VentanaManual extends javax.swing.JFrame {
         fase.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnIniciarActionPerformed
+
+    private void jlPaisesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlPaisesMouseClicked
+        // TODO add your handling code here:
+        VentanaAñadirManual ventana = new  VentanaAñadirManual();
+        ventana.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jlPaisesMouseClicked
 
     /**
      * @param args the command line arguments

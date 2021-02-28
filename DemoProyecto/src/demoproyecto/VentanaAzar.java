@@ -1,10 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package demoproyecto;
 
+package demoproyecto;
+import source.Main;
 /**
  *
  * @author E2
@@ -17,7 +13,7 @@ public class VentanaAzar extends javax.swing.JFrame {
     public VentanaAzar() {
         initComponents();
     }
-
+   
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

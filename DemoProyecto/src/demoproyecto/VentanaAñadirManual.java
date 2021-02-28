@@ -45,46 +45,46 @@ public class VentanaAñadirManual extends javax.swing.JFrame {
 
         btnGrupo1.setText("GRUPO 1");
         getContentPane().add(btnGrupo1);
-        btnGrupo1.setBounds(80, 90, 80, 30);
+        btnGrupo1.setBounds(50, 100, 90, 40);
 
         btnGrupo2.setText("GRUPO 2");
         getContentPane().add(btnGrupo2);
-        btnGrupo2.setBounds(180, 90, 80, 30);
+        btnGrupo2.setBounds(150, 100, 90, 40);
 
         btnGrupo3.setText("GRUPO 3");
         getContentPane().add(btnGrupo3);
-        btnGrupo3.setBounds(280, 90, 78, 30);
+        btnGrupo3.setBounds(250, 100, 90, 40);
 
         btnGrupo4.setText("GRUPO 4");
         getContentPane().add(btnGrupo4);
-        btnGrupo4.setBounds(380, 90, 80, 30);
+        btnGrupo4.setBounds(350, 100, 90, 40);
 
         btnGrupo5.setText("GRUPO 5");
         getContentPane().add(btnGrupo5);
-        btnGrupo5.setBounds(80, 140, 78, 30);
+        btnGrupo5.setBounds(50, 160, 90, 40);
 
         btnGrupo6.setText("GRUPO 6");
         getContentPane().add(btnGrupo6);
-        btnGrupo6.setBounds(180, 140, 80, 30);
+        btnGrupo6.setBounds(150, 160, 90, 40);
 
         btnGrupo7.setText("GRUPO 7");
         getContentPane().add(btnGrupo7);
-        btnGrupo7.setBounds(280, 140, 78, 30);
+        btnGrupo7.setBounds(250, 160, 90, 40);
 
         btnGrupo8.setText("GRUPO 8");
         getContentPane().add(btnGrupo8);
-        btnGrupo8.setBounds(380, 140, 78, 30);
+        btnGrupo8.setBounds(350, 160, 90, 40);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel1.setText("ELEGIR GRUPO ");
+        jLabel1.setText(" SELECCIONAR GRUPO ");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(130, 10, 270, 60);
+        jLabel1.setBounds(50, 20, 390, 60);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo5.jpeg"))); // NOI18N
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(0, 0, 530, 210);
+        jLabel3.setBounds(0, 0, 500, 280);
 
-        setSize(new java.awt.Dimension(525, 205));
+        setSize(new java.awt.Dimension(492, 259));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

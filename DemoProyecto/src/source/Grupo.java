@@ -11,15 +11,15 @@ package source;
  * @author bryan
  */
 public class Grupo {
-    char Id;
-    Nodo primero;
+    static char Id;
+    static Nodo primero;
 
     public Grupo(char id) {
         this.Id=id;
         primero=null;
     }
     
-    public void addEquipo(Nodo nodo){
+    public static void addEquipo(Nodo nodo){
         if(primero==null){
             primero=nodo;
         }else{
@@ -32,7 +32,7 @@ public class Grupo {
         }
     }
     
-    public void crearAzar(){
+    public static void crearAzar(){
         
         for (int i = 0; i < 4; i++) {
             int random = (int) (Math.random() * 33);
@@ -45,14 +45,14 @@ public class Grupo {
         }
     }
     
-    public int calcularPuntaje(Nodo nodo){
+    public static int calcularPuntaje(Nodo nodo){
         int puntajeTotal;
         puntajeTotal=nodo.getEquipo().getPatidosGanados()*3+nodo.getEquipo().getPartidosEmpatados();
         return puntajeTotal;
         
     }
     
-    public void ordenarGrupo(Nodo nodo){
+    public static void ordenarGrupo(Nodo nodo){
         for(Nodo q=nodo;q.getSiguiente()!=null;q=q.getSiguiente()){
             for(Nodo p=q.getSiguiente();p!=null;p=p.getSiguiente()){
                 if(q.getEquipo().getPuntajes()<p.getEquipo().getPuntajes()){
@@ -62,7 +62,7 @@ public class Grupo {
         }
     }
     
-    public void Intercambiar(Nodo nodo1, Nodo nodo2){
+    public static void Intercambiar(Nodo nodo1, Nodo nodo2){
         
         
     }
