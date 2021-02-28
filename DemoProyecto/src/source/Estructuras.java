@@ -11,4 +11,5 @@ package source;
  */
 public class Estructuras {
     int byranmmv;
+    String Sebasputa;
 }
