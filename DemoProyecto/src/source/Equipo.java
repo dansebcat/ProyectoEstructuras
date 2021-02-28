@@ -17,7 +17,7 @@ public class Equipo {
     int golesContra;
     int diferenciagoles;
 
-    public Equipo(String Nombre, int puntajes, int partidosJugados, int patidosGanados, int partidosPerdidos, int partidosEmpatados, int golesFavor, int golesContra, int diferenciagoles) {
+    public Equipo(String Nombre) {
         this.Nombre = Nombre;
         this.puntajes = 0;
         this.partidosJugados = 0;
