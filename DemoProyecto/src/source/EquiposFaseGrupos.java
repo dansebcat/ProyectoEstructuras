@@ -9,7 +9,7 @@ package source;
  *
  * @author danie
  */
-public class crearGrupos {
+public class EquiposFaseGrupos {
 
     public static Grupo grupoA;
     public static Grupo grupoB;
@@ -40,6 +40,7 @@ public class crearGrupos {
     }
 
     public static void crearGruposAlAzar() {
+        ListaEquipos.marcarNoSeleccionado();
         grupoA.crearAzar();
         grupoB.crearAzar();
         grupoC.crearAzar();
@@ -48,5 +49,30 @@ public class crearGrupos {
         grupoF.crearAzar();
         grupoG.crearAzar();
         grupoH.crearAzar();
+    }
+    
+    public static void ordenarGrupos(){
+        grupoA.ordenarGrupo();
+        grupoB.ordenarGrupo();
+        grupoC.ordenarGrupo();
+        grupoD.ordenarGrupo();
+        grupoE.ordenarGrupo();
+        grupoF.ordenarGrupo();
+        grupoG.ordenarGrupo();
+        grupoH.ordenarGrupo();
+    }
+    
+    public static String imprimirGrupos(){
+        String salida="";
+        salida+=grupoA.toString();
+        salida+=grupoB.toString();
+        salida+=grupoC.toString();
+        salida+=grupoD.toString();
+        salida+=grupoE.toString();
+        salida+=grupoF.toString();
+        salida+=grupoG.toString();
+        salida+=grupoH.toString();
+        return salida;
+        
     }
 }

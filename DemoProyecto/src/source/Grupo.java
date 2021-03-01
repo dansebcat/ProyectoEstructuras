@@ -25,7 +25,7 @@ public class Grupo {
             primero = nodo;
         } else {
             Nodo q = primero;
-            while (q.getSiguiente()!=null) {
+            while (q.getSiguiente() != null) {
                 q = q.getSiguiente();
             }
             nodo.setAnterior(q);
@@ -33,12 +33,13 @@ public class Grupo {
             nodo.setSiguiente(null);
         }
     }
-    public String[] crearString(){
-        int cont=0;
-        String[] salida = new String [4];
-        for (Nodo i=primero ; i!=null ; i=i.getSiguiente()) {
-            salida[cont]=i.getEquipo().getNombre();
-            cont ++;
+
+    public String[] crearString() {
+        int cont = 0;
+        String[] salida = new String[4];
+        for (Nodo i = primero; i != null; i = i.getSiguiente()) {
+            salida[cont] = i.getEquipo().getNombre();
+            cont++;
         }
         return salida;
     }
@@ -54,7 +55,7 @@ public class Grupo {
                     ListaEquipos.listaEquipos[random].setIsSelected(true);
                     run = false;
                 } else {
-                   random = (int) (Math.random() * 32);
+                    random = (int) (Math.random() * 32);
                 }
             }
         }
@@ -67,11 +68,52 @@ public class Grupo {
 
     }
 
-    public void ordenarGrupo(Nodo nodo) {
-        for (Nodo q = nodo; q.getSiguiente() != null; q = q.getSiguiente()) {
+    public void ingresarResultados(int res1, int res2, String nombre1, String nombre2) {
+        Nodo equipo1 = buscar(nombre1);
+        Nodo equipo2 = buscar(nombre2);
+        if (res1 > res2) {
+            //Equipo1Gano
+            equipo1.getEquipo().Gano(res1, res2);
+            equipo1.getEquipo().Perdio(res2, res1);
+        } else if (res1 < res2) {
+            //Equipo1 perdio
+            equipo1.getEquipo().Perdio(res1, res2);
+            equipo2.getEquipo().Gano(res2, res1);
+        } else {
+            //empataron
+            equipo1.getEquipo().empato(res1, res2);
+            equipo2.getEquipo().empato(res2, res1);
+        }
+    }
+
+    public Nodo buscar(String nombre) {
+        Nodo nodo;
+        for (Nodo i = primero; i != null; i = i.getSiguiente()) {
+            if (i.getEquipo().getNombre().equals(nombre)) {
+                return i;
+            }
+        }
+        return null;
+
+    }
+//CORREGIRR!!!
+    public void ordenarGrupo() {
+        for (Nodo q = primero; q.getSiguiente() != null; q = q.getSiguiente()) {
             for (Nodo p = q.getSiguiente(); p != null; p = p.getSiguiente()) {
                 if (q.getEquipo().getPuntajes() < p.getEquipo().getPuntajes()) {
                     //Intercambiar Lista Doblemente Enlazada. 
+                    
+                        Nodo aux1, aux2;
+                        aux1 = p.getSiguiente();
+                        aux2 = p.getAnterior();
+                        q.getAnterior().setSiguiente(p);
+                        q.getSiguiente().setAnterior(p);
+                        p.setSiguiente(q.getSiguiente());
+                        p.setAnterior(q.getAnterior());
+                        q.setSiguiente(aux1);
+                        q.setAnterior(aux2);
+                    
+
                 }
             }
         }
@@ -90,7 +132,7 @@ public class Grupo {
         return salida;
     }
 
-     public void limpiarGrupo(){
-         primero=null;
-     }
+    public void limpiarGrupo() {
+        primero = null;
+    }
 }

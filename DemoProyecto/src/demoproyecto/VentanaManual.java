@@ -8,7 +8,8 @@ package demoproyecto;
 import java.awt.Color;
 import java.util.Vector;
 import javax.swing.JOptionPane;
-import source.ListaEquipos;
+import source.*;
+
 
 /**
  *
@@ -40,6 +41,7 @@ public class VentanaManual extends javax.swing.JFrame {
     int ch = 0;
 
     public VentanaManual() {
+        EquiposFaseGrupos.iniciarCrearGrupos();
         initComponents();
         cargarEquipos();
 
@@ -283,7 +285,9 @@ public class VentanaManual extends javax.swing.JFrame {
             jlGrupo1.setListData(paisesA);
             paises[i] = "";
             jlPaises.setListData(paises);
+            EquiposFaseGrupos.grupoA.addEquipo(new Nodo(new Equipo(paisesA[ca])));
             ca++;
+            
         }else{
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
         }
@@ -299,7 +303,9 @@ public class VentanaManual extends javax.swing.JFrame {
             jlGrupo5.setListData(paisesE);
             paises[i] = "";
             jlPaises.setListData(paises);
+            EquiposFaseGrupos.grupoE.addEquipo(new Nodo(new Equipo(paisesE[ce])));
             ce++;
+            
         }else{
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
         }
@@ -313,6 +319,7 @@ public class VentanaManual extends javax.swing.JFrame {
             jlGrupo2.setListData(paisesB);
             paises[i] = "";
             jlPaises.setListData(paises);
+            EquiposFaseGrupos.grupoB.addEquipo(new Nodo(new Equipo(paisesB[cb])));
             cb++;
         }else{
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
@@ -327,6 +334,7 @@ public class VentanaManual extends javax.swing.JFrame {
             jlGrupo3.setListData(paisesC);
             paises[i] = "";
             jlPaises.setListData(paises);
+            EquiposFaseGrupos.grupoC.addEquipo(new Nodo(new Equipo(paisesC[cc])));
             cc++;
         }else{
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
@@ -341,6 +349,7 @@ public class VentanaManual extends javax.swing.JFrame {
             jlGrupo4.setListData(paisesD);
             paises[i] = "";
             jlPaises.setListData(paises);
+            EquiposFaseGrupos.grupoD.addEquipo(new Nodo(new Equipo(paisesD[cd])));
             cd++;
         }else{
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
@@ -355,6 +364,7 @@ public class VentanaManual extends javax.swing.JFrame {
             jlGrupo6.setListData(paisesF);
             paises[i] = "";
             jlPaises.setListData(paises);
+            EquiposFaseGrupos.grupoF.addEquipo(new Nodo(new Equipo(paisesF[cf])));
             cf++;
         }else{
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
@@ -369,6 +379,7 @@ public class VentanaManual extends javax.swing.JFrame {
             jlGrupo7.setListData(paisesG);
             paises[i] = "";
             jlPaises.setListData(paises);
+            EquiposFaseGrupos.grupoG.addEquipo(new Nodo(new Equipo(paisesG[cg])));
             cg++;
         }else {
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
@@ -383,6 +394,7 @@ public class VentanaManual extends javax.swing.JFrame {
             jlGrupo8.setListData(paisesH);
             paises[i] = "";
             jlPaises.setListData(paises);
+            EquiposFaseGrupos.grupoH.addEquipo(new Nodo(new Equipo(paisesH[ch])));
             ch++;
         }else{
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");

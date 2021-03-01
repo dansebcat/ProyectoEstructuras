@@ -1,5 +1,3 @@
-
-
 package source;
 
 /**
@@ -7,9 +5,9 @@ package source;
  * @author bryan
  */
 public class Equipo {
-    
+
     String Nombre;
-    private int puntajes;
+    private int puntaje;
     private int partidosJugados;
     private int patidosGanados;
     private int partidosPerdidos;
@@ -21,7 +19,7 @@ public class Equipo {
 
     public Equipo(String Nombre) {
         this.Nombre = Nombre;
-        this.puntajes = 0;
+        this.puntaje = 0;
         this.partidosJugados = 0;
         this.patidosGanados = 0;
         this.partidosPerdidos = 0;
@@ -29,7 +27,32 @@ public class Equipo {
         this.golesFavor = 0;
         this.golesContra = 0;
         this.diferenciagoles = 0;
-        isSelected=false;
+        isSelected = false;
+    }
+
+    public void Gano(int res1, int res2) {
+        this.partidosJugados++;
+        this.patidosGanados++;
+        this.golesFavor += res1;
+        this.golesContra += res2;
+        this.diferenciagoles += (golesFavor - golesContra);
+        this.puntaje += 3;
+    }
+    
+    public void Perdio(int res1, int res2){
+        this.partidosJugados++;
+        this.partidosPerdidos++;
+        this.golesFavor+=res1;
+        this.golesContra+=res2;
+        this.diferenciagoles += (golesFavor-golesContra);
+    }
+    
+    public void empato(int res1, int res2){
+        this.partidosJugados++;
+        this.partidosEmpatados++;
+        this.golesFavor+=res1;
+        this.golesContra+=res2;
+        this.diferenciagoles += (golesFavor-golesContra);
     }
 
     public String getNombre() {
@@ -41,11 +64,11 @@ public class Equipo {
     }
 
     public int getPuntajes() {
-        return puntajes;
+        return puntaje;
     }
 
     public void setPuntajes(int puntajes) {
-        this.puntajes = puntajes;
+        this.puntaje = puntajes;
     }
 
     public int getPartidosJugados() {
@@ -111,20 +134,12 @@ public class Equipo {
     public void setIsSelected(boolean isSelected) {
         this.isSelected = isSelected;
     }
-    
-    
 
     @Override
     public String toString() {
-        String salida=Nombre+"\t"+puntajes+"\t"+partidosJugados+"\t"+patidosGanados+"\t"+partidosEmpatados+"\t"+
-                partidosPerdidos+"\t"+diferenciagoles;
+        String salida = Nombre + "\t" + puntaje + "\t" + partidosJugados + "\t" + patidosGanados + "\t" + partidosEmpatados + "\t"
+                + partidosPerdidos + "\t" + diferenciagoles;
         return salida;
     }
-    
-    
 
-    
-    
-    
 }
-

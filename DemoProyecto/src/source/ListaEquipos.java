@@ -45,6 +45,11 @@ public class ListaEquipos {
         listaEquipos[30]=  new Equipo("Colombia");
         listaEquipos[31]=  new Equipo("Japón");
     }
+    public static void marcarNoSeleccionado(){
+        for (int i = 0; i < 32; i++) {
+            listaEquipos[i].setIsSelected(false);
+        }
+    }
     
     
 }
