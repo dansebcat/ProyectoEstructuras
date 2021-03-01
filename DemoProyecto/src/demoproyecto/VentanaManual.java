@@ -7,6 +7,8 @@ package demoproyecto;
 
 import java.awt.Color;
 import java.util.Vector;
+import javax.swing.JOptionPane;
+import source.ListaEquipos;
 
 /**
  *
@@ -17,44 +19,39 @@ public class VentanaManual extends javax.swing.JFrame {
     /**
      * Creates new form VentanaManual
      */
-    Vector<String> listaEquipos;
-    Vector<String> grupo1;
-    Vector<String> grupo2;
-    Vector<String> grupo3;
-    Vector<String> grupo4;
-    Vector<String> grupo5;
-    Vector<String> grupo6;
-    Vector<String> grupo7;
-    Vector<String> grupo8;
+    String[] paises = new String[32];
+    String paisesA[] = new String[4];
+    String paisesB[] = new String[4];
+    String paisesC[] = new String[4];
+    String paisesD[] = new String[4];
+    String paisesE[] = new String[4];
+    String paisesF[] = new String[4];
+    String paisesG[] = new String[4];
+    String paisesH[] = new String[4];
+    
+    
+    int ca = 0;
+    int cb = 0;
+    int cc = 0;
+    int cd = 0;
+    int ce = 0;
+    int cf = 0;
+    int cg = 0;
+    int ch = 0;
+
     public VentanaManual() {
         initComponents();
-        listaEquipos = new Vector<String>();
-        grupo1 = new Vector<String>();
-        grupo2 = new Vector<String>();
-        grupo3 = new Vector<String>();
-        grupo4 = new Vector<String>();
-        grupo5 = new Vector<String>();
-        grupo6 = new Vector<String>();
-        grupo7 = new Vector<String>();
-        grupo8 = new Vector<String>();
         cargarEquipos();
+
     }
-    public void cargarEquipos(){
-        listaEquipos.add("Rusia");
-        listaEquipos.add("Rusia");
-        listaEquipos.add("Rusia");
-        listaEquipos.add("Rusia");
-        listaEquipos.add("Rusia");
-        listaEquipos.add("Rusia");
-        listaEquipos.add("Rusia");
-        listaEquipos.add("Rusia");
-        listaEquipos.add("Rusia");
-        listaEquipos.add("Rusia");
-        listaEquipos.add("Rusia");
-        listaEquipos.add("Rusia");
-        
-              
-                
+
+    public void cargarEquipos() {
+
+        for (int i = 0; i < 32; i++) {
+            paises[i] = ListaEquipos.listaEquipos[i].getNombre();
+        }
+        jlPaises.setListData(paises);
+
     }
 
     /**
@@ -86,7 +83,16 @@ public class VentanaManual extends javax.swing.JFrame {
         jlGrupo8 = new javax.swing.JList<>();
         btnRegresar = new javax.swing.JButton();
         btnIniciar = new javax.swing.JButton();
+        btnGrC = new javax.swing.JButton();
+        btnGrG = new javax.swing.JButton();
+        btnGrD = new javax.swing.JButton();
+        btngrH = new javax.swing.JButton();
+        btnGrB = new javax.swing.JButton();
+        btnGrF = new javax.swing.JButton();
+        btnGrA = new javax.swing.JButton();
+        btnGrE = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -99,11 +105,6 @@ public class VentanaManual extends javax.swing.JFrame {
             public String getElementAt(int i) { return strings[i]; }
         });
         jlPaises.setOpaque(false);
-        jlPaises.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jlPaisesMouseClicked(evt);
-            }
-        });
         jScrollPane1.setViewportView(jlPaises);
 
         getContentPane().add(jScrollPane1);
@@ -175,11 +176,87 @@ public class VentanaManual extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnIniciar);
-        btnIniciar.setBounds(490, 430, 160, 30);
+        btnIniciar.setBounds(560, 430, 160, 30);
+
+        btnGrC.setText("Group C");
+        btnGrC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGrCActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnGrC);
+        btnGrC.setBounds(611, 320, 90, 30);
+
+        btnGrG.setText("Group G");
+        btnGrG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGrGActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnGrG);
+        btnGrG.setBounds(701, 320, 80, 30);
+
+        btnGrD.setText("Group D");
+        btnGrD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGrDActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnGrD);
+        btnGrD.setBounds(611, 350, 90, 40);
+
+        btngrH.setText("Group H");
+        btngrH.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btngrHActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btngrH);
+        btngrH.setBounds(701, 350, 80, 40);
+
+        btnGrB.setText("Group B");
+        btnGrB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGrBActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnGrB);
+        btnGrB.setBounds(611, 290, 90, 30);
+
+        btnGrF.setText("Group F");
+        btnGrF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGrFActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnGrF);
+        btnGrF.setBounds(701, 290, 80, 30);
+
+        btnGrA.setText("Group A");
+        btnGrA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGrAActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnGrA);
+        btnGrA.setBounds(611, 260, 90, 30);
+
+        btnGrE.setText("Group E");
+        btnGrE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGrEActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnGrE);
+        btnGrE.setBounds(701, 260, 80, 30);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondoMundial4.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 800, 550);
+
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(630, 410, 34, 14);
 
         setSize(new java.awt.Dimension(800, 545));
         setLocationRelativeTo(null);
@@ -192,17 +269,125 @@ public class VentanaManual extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRegresarActionPerformed
 
     private void btnIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarActionPerformed
-        VentanaFecha1Manual fase =new VentanaFecha1Manual();
+        VentanaFecha1Manual fase = new VentanaFecha1Manual();
         fase.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnIniciarActionPerformed
 
-    private void jlPaisesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlPaisesMouseClicked
-        // TODO add your handling code here:
-        VentanaAñadirManual ventana = new  VentanaAñadirManual();
-        ventana.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_jlPaisesMouseClicked
+    private void btnGrAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGrAActionPerformed
+        
+        if (ca < 4) {
+            int i = jlPaises.getSelectedIndex();
+
+            paisesA[ca] = jlPaises.getSelectedValue();
+            jlGrupo1.setListData(paisesA);
+            paises[i] = "";
+            jlPaises.setListData(paises);
+            ca++;
+        }else{
+            JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
+        }
+
+
+    }//GEN-LAST:event_btnGrAActionPerformed
+
+    private void btnGrEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGrEActionPerformed
+        if (ce < 4) {
+            int i = jlPaises.getSelectedIndex();
+
+            paisesE[ce] = jlPaises.getSelectedValue();
+            jlGrupo5.setListData(paisesE);
+            paises[i] = "";
+            jlPaises.setListData(paises);
+            ce++;
+        }else{
+            JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
+        }
+    }//GEN-LAST:event_btnGrEActionPerformed
+
+    private void btnGrBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGrBActionPerformed
+       if (cb < 4) {
+            int i = jlPaises.getSelectedIndex();
+
+            paisesB[cb] = jlPaises.getSelectedValue();
+            jlGrupo2.setListData(paisesB);
+            paises[i] = "";
+            jlPaises.setListData(paises);
+            cb++;
+        }else{
+            JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
+        }
+    }//GEN-LAST:event_btnGrBActionPerformed
+
+    private void btnGrCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGrCActionPerformed
+        if (cc < 4) {
+            int i = jlPaises.getSelectedIndex();
+
+            paisesC[cc] = jlPaises.getSelectedValue();
+            jlGrupo3.setListData(paisesC);
+            paises[i] = "";
+            jlPaises.setListData(paises);
+            cc++;
+        }else{
+            JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
+        }
+    }//GEN-LAST:event_btnGrCActionPerformed
+
+    private void btnGrDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGrDActionPerformed
+        if (cd < 4) {
+            int i = jlPaises.getSelectedIndex();
+
+            paisesD[cd] = jlPaises.getSelectedValue();
+            jlGrupo4.setListData(paisesD);
+            paises[i] = "";
+            jlPaises.setListData(paises);
+            cd++;
+        }else{
+            JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
+        }
+    }//GEN-LAST:event_btnGrDActionPerformed
+
+    private void btnGrFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGrFActionPerformed
+        if (cf< 4) {
+            int i = jlPaises.getSelectedIndex();
+
+            paisesF[cf] = jlPaises.getSelectedValue();
+            jlGrupo6.setListData(paisesF);
+            paises[i] = "";
+            jlPaises.setListData(paises);
+            cf++;
+        }else{
+            JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
+        }
+    }//GEN-LAST:event_btnGrFActionPerformed
+
+    private void btnGrGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGrGActionPerformed
+       if (cg < 4) {
+            int i = jlPaises.getSelectedIndex();
+
+            paisesG[cg] = jlPaises.getSelectedValue();
+            jlGrupo7.setListData(paisesG);
+            paises[i] = "";
+            jlPaises.setListData(paises);
+            cg++;
+        }else {
+            JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
+        }
+    }//GEN-LAST:event_btnGrGActionPerformed
+
+    private void btngrHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngrHActionPerformed
+        if (ch < 4) {
+            int i = jlPaises.getSelectedIndex();
+
+            paisesH[ch] = jlPaises.getSelectedValue();
+            jlGrupo8.setListData(paisesH);
+            paises[i] = "";
+            jlPaises.setListData(paises);
+            ch++;
+        }else{
+            JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
+        }
+    }//GEN-LAST:event_btngrHActionPerformed
 
     /**
      * @param args the command line arguments
@@ -235,15 +420,24 @@ public class VentanaManual extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new VentanaManual().setVisible(true);
-                
+
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnGrA;
+    private javax.swing.JButton btnGrB;
+    private javax.swing.JButton btnGrC;
+    private javax.swing.JButton btnGrD;
+    private javax.swing.JButton btnGrE;
+    private javax.swing.JButton btnGrF;
+    private javax.swing.JButton btnGrG;
     private javax.swing.JButton btnIniciar;
     private javax.swing.JButton btnRegresar;
+    private javax.swing.JButton btngrH;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;

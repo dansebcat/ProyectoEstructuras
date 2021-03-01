@@ -1,6 +1,8 @@
 
 package demoproyecto;
 
+import source.ListaEquipos;
+
 /**
  *
  * @author E2
@@ -12,6 +14,7 @@ public class Principal extends javax.swing.JFrame {
      */
     public Principal() {
         initComponents();
+        ListaEquipos.ListaEquipos();
     }
 
     /**

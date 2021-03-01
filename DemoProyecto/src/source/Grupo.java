@@ -90,4 +90,7 @@ public class Grupo {
         return salida;
     }
 
+     public void limpiarGrupo(){
+         primero=null;
+     }
 }

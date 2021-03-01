@@ -10,31 +10,43 @@ package source;
  * @author danie
  */
 public class crearGrupos {
-   public static Grupo grupoA;
-   static Grupo grupoB;
-   static Grupo grupoC;
-   static Grupo grupoD;
-   static Grupo grupoE;
-   static Grupo grupoF;
-   static Grupo grupoG;
-   static Grupo grupoH;
-   
-   public static void iniciarCrearGrupos(){
-       grupoA = new Grupo('A');
-        grupoA.crearAzar();
-         grupoB = new Grupo('B');
-        grupoB.crearAzar();
+
+    public static Grupo grupoA;
+    public static Grupo grupoB;
+    public static Grupo grupoC;
+    public static Grupo grupoD;
+    public static Grupo grupoE;
+    public static Grupo grupoF;
+    public static Grupo grupoG;
+    public static Grupo grupoH;
+
+    public static void iniciarCrearGrupos() {
+        grupoA = new Grupo('A');
+
+        grupoB = new Grupo('B');
+
         grupoC = new Grupo('C');
-        grupoC.crearAzar();
+
         grupoD = new Grupo('D');
-        grupoD.crearAzar();
+
         grupoE = new Grupo('E');
-        grupoE.crearAzar();
+
         grupoF = new Grupo('F');
-        grupoF.crearAzar();
-         grupoG = new Grupo('G');
-        grupoG.crearAzar();
+
+        grupoG = new Grupo('G');
+
         grupoH = new Grupo('H');
+
+    }
+
+    public static void crearGruposAlAzar() {
+        grupoA.crearAzar();
+        grupoB.crearAzar();
+        grupoC.crearAzar();
+        grupoD.crearAzar();
+        grupoE.crearAzar();
+        grupoF.crearAzar();
+        grupoG.crearAzar();
         grupoH.crearAzar();
-   }
+    }
 }

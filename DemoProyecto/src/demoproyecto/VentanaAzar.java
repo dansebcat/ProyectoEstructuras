@@ -12,9 +12,18 @@ public class VentanaAzar extends javax.swing.JFrame {
      * Creates new form VentanaAzar
      */
     public VentanaAzar() {
+        
         initComponents();
         crearGrupos.iniciarCrearGrupos();
+        crearGrupos.crearGruposAlAzar();
         jlGrupo1.setListData(crearGrupos.grupoA.crearString());
+        jlGrupo2.setListData(crearGrupos.grupoB.crearString());
+         jlGrupo3.setListData(crearGrupos.grupoC.crearString());
+        jlGrupo4.setListData(crearGrupos.grupoD.crearString());
+        jlGrupo5.setListData(crearGrupos.grupoE.crearString());
+        jlGrupo6.setListData(crearGrupos.grupoF.crearString());
+        jlGrupo7.setListData(crearGrupos.grupoG.crearString());
+        jlGrupo8.setListData(crearGrupos.grupoH.crearString());
     }
    
     /**
