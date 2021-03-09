@@ -35,16 +35,16 @@ public class Equipo {
         this.patidosGanados++;
         this.golesFavor += res1;
         this.golesContra += res2;
-        this.diferenciagoles += (golesFavor - golesContra);
+        this.diferenciagoles = (golesFavor - golesContra);
         this.puntaje += 3;
     }
     
-    public void Perdio(int res1, int res2){
+    public void perdio(int res1, int res2){
         this.partidosJugados++;
         this.partidosPerdidos++;
         this.golesFavor+=res1;
         this.golesContra+=res2;
-        this.diferenciagoles += (golesFavor-golesContra);
+        this.diferenciagoles = (golesFavor-golesContra);
     }
     
     public void empato(int res1, int res2){
@@ -52,7 +52,8 @@ public class Equipo {
         this.partidosEmpatados++;
         this.golesFavor+=res1;
         this.golesContra+=res2;
-        this.diferenciagoles += (golesFavor-golesContra);
+        this.diferenciagoles = (golesFavor-golesContra);
+        this.puntaje++;
     }
 
     public String getNombre() {

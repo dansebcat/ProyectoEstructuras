@@ -14,15 +14,18 @@ public class Grupo {
 
     char Id;
     Nodo primero;
+    Nodo ultimo;
 
     public Grupo(char id) {
         this.Id = id;
         primero = null;
+        ultimo = null;
     }
 
     public void addEquipo(Nodo nodo) {
         if (primero == null) {
             primero = nodo;
+            ultimo = primero;
         } else {
             Nodo q = primero;
             while (q.getSiguiente() != null) {
@@ -31,6 +34,7 @@ public class Grupo {
             nodo.setAnterior(q);
             q.setSiguiente(nodo);
             nodo.setSiguiente(null);
+            ultimo = nodo;
         }
     }
 
@@ -74,10 +78,10 @@ public class Grupo {
         if (res1 > res2) {
             //Equipo1Gano
             equipo1.getEquipo().Gano(res1, res2);
-            equipo1.getEquipo().Perdio(res2, res1);
+            equipo2.getEquipo().perdio(res2, res1);
         } else if (res1 < res2) {
             //Equipo1 perdio
-            equipo1.getEquipo().Perdio(res1, res2);
+            equipo1.getEquipo().perdio(res1, res2);
             equipo2.getEquipo().Gano(res2, res1);
         } else {
             //empataron
@@ -97,30 +101,40 @@ public class Grupo {
 
     }
 //CORREGIRR!!!
+
     public void ordenarGrupo() {
+        //ORDENAR DEPENDIENDO PUNTAJE
         for (Nodo q = primero; q.getSiguiente() != null; q = q.getSiguiente()) {
             for (Nodo p = q.getSiguiente(); p != null; p = p.getSiguiente()) {
                 if (q.getEquipo().getPuntajes() < p.getEquipo().getPuntajes()) {
                     //Intercambiar Lista Doblemente Enlazada. 
                     
-                        Nodo aux1, aux2;
-                        aux1 = p.getSiguiente();
-                        aux2 = p.getAnterior();
-                        q.getAnterior().setSiguiente(p);
-                        q.getSiguiente().setAnterior(p);
-                        p.setSiguiente(q.getSiguiente());
-                        p.setAnterior(q.getAnterior());
-                        q.setSiguiente(aux1);
-                        q.setAnterior(aux2);
-                    
+                        intercambiar(q, p);
+       
 
                 }
             }
         }
+        //ORDENAR DEPENDIENDO GOLES DE DIFERENCIA EN CASO DE TENER PUNTAJE IGUAL
+            for (Nodo q = primero; q.getSiguiente() != null; q = q.getSiguiente()) {
+            for (Nodo p = q.getSiguiente(); p != null; p = p.getSiguiente()) {
+                if (q.getEquipo().getPuntajes() == p.getEquipo().getPuntajes()) {
+                   
+                    if(q.getEquipo().getDiferenciagoles()<p.getEquipo().getDiferenciagoles())
+                        intercambiar(q, p);
+       
+
+                }
+            }
+        }
+        
+        
     }
 
-    public void Intercambiar(Nodo nodo1, Nodo nodo2) {
-
+    public void intercambiar(Nodo nodo1, Nodo nodo2){
+        Equipo aux = nodo2.getEquipo();
+         nodo2.setEquipo(nodo1.getEquipo());
+         nodo1.setEquipo(aux);
     }
 
     @Override

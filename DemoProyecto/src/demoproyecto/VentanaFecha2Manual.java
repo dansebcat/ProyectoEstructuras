@@ -55,6 +55,7 @@ public class VentanaFecha2Manual extends javax.swing.JFrame {
         setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(920, 580));
         setResizable(false);
+        setSize(new java.awt.Dimension(920, 580));
         getContentPane().setLayout(null);
 
         jlGrupo9.setModel(new javax.swing.AbstractListModel<String>() {
