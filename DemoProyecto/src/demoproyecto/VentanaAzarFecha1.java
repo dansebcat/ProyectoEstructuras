@@ -13,9 +13,6 @@ import source.*;
  */
 public class VentanaAzarFecha1 extends javax.swing.JFrame {
 
-    /**
-     * Creates new form FaseOctavos
-     */
     String[] strGrupoA = EquiposFaseGrupos.grupoA.crearString();
     String[] strGrupoB = EquiposFaseGrupos.grupoB.crearString();
     String[] strGrupoC = EquiposFaseGrupos.grupoC.crearString();
@@ -29,16 +26,26 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
 
-        this.jlGrupo1.setListData(strGrupoA);
-        this.jlGrupo2.setListData(strGrupoB);
-        this.jlGrupo3.setListData(strGrupoC);
-        this.jlGrupo4.setListData(strGrupoD);
-        this.jlGrupo5.setListData(strGrupoE);
-        this.jlGrupo6.setListData(strGrupoF);
-        this.jlGrupo7.setListData(strGrupoG);
-        this.jlGrupo8.setListData(strGrupoH);
+        
     }
-
+ void llenarTablitas(){
+    String[] strGrupoA1 = EquiposFaseGrupos.grupoA.crearString();
+    String[] strGrupoB1 = EquiposFaseGrupos.grupoB.crearString();
+    String[] strGrupoC1 = EquiposFaseGrupos.grupoC.crearString();
+    String[] strGrupoD1 = EquiposFaseGrupos.grupoD.crearString();
+    String[] strGrupoE1 = EquiposFaseGrupos.grupoE.crearString();
+    String[] strGrupoF1 = EquiposFaseGrupos.grupoF.crearString();
+    String[] strGrupoG1= EquiposFaseGrupos.grupoG.crearString();
+    String[] strGrupoH1 = EquiposFaseGrupos.grupoH.crearString();
+     this.jlGrupo1.setListData(strGrupoA1);
+        this.jlGrupo2.setListData(strGrupoB1);
+        this.jlGrupo3.setListData(strGrupoC1);
+        this.jlGrupo4.setListData(strGrupoD1);
+        this.jlGrupo5.setListData(strGrupoE1);
+        this.jlGrupo6.setListData(strGrupoF1);
+        this.jlGrupo7.setListData(strGrupoG1);
+        this.jlGrupo8.setListData(strGrupoH1);
+ }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -48,6 +55,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
         btnRegresar = new javax.swing.JButton();
         btnAvanzarFecha2 = new javax.swing.JButton();
         btnSimularFecha1 = new javax.swing.JButton();
@@ -68,12 +76,17 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         jScrollPane9 = new javax.swing.JScrollPane();
         jlGrupo1 = new javax.swing.JList<>();
         Titulo = new javax.swing.JLabel();
+        btnSimularFecha2 = new javax.swing.JButton();
+        btnSimularFecha3 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jtxtAreaResultados = new javax.swing.JTextArea();
         jScrollPane10 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         LabelFondo = new javax.swing.JLabel();
+        btnSimularFecha4 = new javax.swing.JButton();
+
+        jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -91,7 +104,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         getContentPane().add(btnRegresar);
         btnRegresar.setBounds(10, 540, 160, 30);
 
-        btnAvanzarFecha2.setText("AVANZAR A FECHA2");
+        btnAvanzarFecha2.setText("AVANZAR A OCTAVOS");
         btnAvanzarFecha2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAvanzarFecha2ActionPerformed(evt);
@@ -107,7 +120,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnSimularFecha1);
-        btnSimularFecha1.setBounds(610, 490, 160, 30);
+        btnSimularFecha1.setBounds(410, 490, 160, 30);
 
         jlGrupo2.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -202,6 +215,24 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         getContentPane().add(Titulo);
         Titulo.setBounds(560, 10, 240, 30);
 
+        btnSimularFecha2.setText("SIMULAR FECHA 3");
+        btnSimularFecha2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSimularFecha2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnSimularFecha2);
+        btnSimularFecha2.setBounds(750, 490, 160, 30);
+
+        btnSimularFecha3.setText("SIMULAR FECHA 1");
+        btnSimularFecha3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSimularFecha3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnSimularFecha3);
+        btnSimularFecha3.setBounds(580, 490, 160, 30);
+
         jtxtAreaResultados.setColumns(20);
         jtxtAreaResultados.setRows(5);
         jScrollPane2.setViewportView(jtxtAreaResultados);
@@ -236,39 +267,54 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
 
         LabelFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FondoOctavos.jpg"))); // NOI18N
         getContentPane().add(LabelFondo);
-        LabelFondo.setBounds(0, 0, 920, 580);
+        LabelFondo.setBounds(0, -10, 920, 580);
+
+        btnSimularFecha4.setText("SIMULAR FECHA 1");
+        btnSimularFecha4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSimularFecha4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnSimularFecha4);
+        btnSimularFecha4.setBounds(480, 490, 160, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAvanzarFecha2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAvanzarFecha2ActionPerformed
-        VentanaAzarFecha2 fecha2 = new VentanaAzarFecha2();
-        fecha2.setVisible(true);
+
+        VentanaAzarOctavos ventOctavos = new VentanaAzarOctavos();
+        ventOctavos.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnAvanzarFecha2ActionPerformed
 
     private void btnSimularFecha1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimularFecha1ActionPerformed
+
+        generarResultados();
+        llenarTablitas();
+    }//GEN-LAST:event_btnSimularFecha1ActionPerformed
+    void generarResultados() {
         String salida = "";
         int resultados[] = new int[32];
         for (int i = 0; i < 32; i++) {
             resultados[i] = (int) (Math.random() * 6);
-            
+
         }
-        salida += "Partidos Grupo A\n"+strGrupoA[0] + "\t" + resultados[0] + "\t" + strGrupoA[1] + "\t" + resultados[1] + "\n";
+        salida += "Partidos Grupo A\n" + strGrupoA[0] + "\t" + resultados[0] + "\t" + strGrupoA[1] + "\t" + resultados[1] + "\n";
         salida += strGrupoA[2] + "\t" + resultados[2] + "\t" + strGrupoA[3] + "\t" + resultados[3] + "\n";
-        salida += "\nPartidos Grupo B\n"+strGrupoB[0] + "\t" + resultados[4] + "\t" + strGrupoB[1] + "\t" + resultados[5] + "\n";
+        salida += "\nPartidos Grupo B\n" + strGrupoB[0] + "\t" + resultados[4] + "\t" + strGrupoB[1] + "\t" + resultados[5] + "\n";
         salida += strGrupoB[2] + "\t" + resultados[6] + "\t" + strGrupoB[3] + "\t" + resultados[7] + "\n";
-        salida += "\nPartidos Grupo C\n"+strGrupoC[0] + "\t" + resultados[8] + "\t" + strGrupoC[1] + "\t" + resultados[9] + "\n";
+        salida += "\nPartidos Grupo C\n" + strGrupoC[0] + "\t" + resultados[8] + "\t" + strGrupoC[1] + "\t" + resultados[9] + "\n";
         salida += strGrupoC[2] + "\t" + resultados[10] + "\t" + strGrupoC[3] + "\t" + resultados[11] + "\n";
-        salida += "\nPartidos Grupo D\n"+strGrupoD[0] + "\t" + resultados[12] + "\t" + strGrupoD[1] + "\t" + resultados[13] + "\n";
+        salida += "\nPartidos Grupo D\n" + strGrupoD[0] + "\t" + resultados[12] + "\t" + strGrupoD[1] + "\t" + resultados[13] + "\n";
         salida += strGrupoD[2] + "\t" + resultados[14] + "\t" + strGrupoD[3] + "\t" + resultados[15] + "\n";
-        salida += "\nPartidos Grupo E\n"+strGrupoE[0] + "\t" + resultados[16] + "\t" + strGrupoE[1] + "\t" + resultados[17] + "\n";
+        salida += "\nPartidos Grupo E\n" + strGrupoE[0] + "\t" + resultados[16] + "\t" + strGrupoE[1] + "\t" + resultados[17] + "\n";
         salida += strGrupoE[2] + "\t" + resultados[18] + "\t" + strGrupoE[3] + "\t" + resultados[19] + "\n";
-        salida += "\nPartidos Grupo F\n"+strGrupoF[0] + "\t" + resultados[20] + "\t" + strGrupoF[1] + "\t" + resultados[21] + "\n";
+        salida += "\nPartidos Grupo F\n" + strGrupoF[0] + "\t" + resultados[20] + "\t" + strGrupoF[1] + "\t" + resultados[21] + "\n";
         salida += strGrupoF[2] + "\t" + resultados[22] + "\t" + strGrupoF[3] + "\t" + resultados[23] + "\n";
-        salida += "\nPartidos Grupo G\n"+strGrupoG[0] + "\t" + resultados[24] + "\t" + strGrupoG[1] + "\t" + resultados[25] + "\n";
+        salida += "\nPartidos Grupo G\n" + strGrupoG[0] + "\t" + resultados[24] + "\t" + strGrupoG[1] + "\t" + resultados[25] + "\n";
         salida += strGrupoG[2] + "\t" + resultados[26] + "\t" + strGrupoG[3] + "\t" + resultados[27] + "\n";
-        salida += "\nPartidos Grupo H\n"+strGrupoH[0] + "\t" + resultados[28] + "\t" + strGrupoH[1] + "\t" + resultados[29] + "\n";
+        salida += "\nPartidos Grupo H\n" + strGrupoH[0] + "\t" + resultados[28] + "\t" + strGrupoH[1] + "\t" + resultados[29] + "\n";
         salida += strGrupoH[2] + "\t" + resultados[30] + "\t" + strGrupoH[3] + "\t" + resultados[31] + "\n";
         this.jtxtAreaResultados.setText(salida);
         EquiposFaseGrupos.grupoA.ingresarResultados(resultados[0], resultados[1], strGrupoA[0], strGrupoA[1]);
@@ -287,17 +333,29 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         EquiposFaseGrupos.grupoG.ingresarResultados(resultados[26], resultados[27], strGrupoG[2], strGrupoG[3]);
         EquiposFaseGrupos.grupoH.ingresarResultados(resultados[28], resultados[29], strGrupoH[0], strGrupoH[1]);
         EquiposFaseGrupos.grupoH.ingresarResultados(resultados[30], resultados[31], strGrupoH[2], strGrupoH[3]);
-        
+
         EquiposFaseGrupos.ordenarGrupos();
         jTextArea1.setText(EquiposFaseGrupos.imprimirGrupos());
-        
-    }//GEN-LAST:event_btnSimularFecha1ActionPerformed
-
+    }
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
         VentanaAzar regresar = new VentanaAzar();
         regresar.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnRegresarActionPerformed
+
+    private void btnSimularFecha2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimularFecha2ActionPerformed
+        generarResultados();
+        llenarTablitas();
+    }//GEN-LAST:event_btnSimularFecha2ActionPerformed
+
+    private void btnSimularFecha3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimularFecha3ActionPerformed
+        generarResultados();
+        llenarTablitas();
+    }//GEN-LAST:event_btnSimularFecha3ActionPerformed
+
+    private void btnSimularFecha4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimularFecha4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSimularFecha4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -347,6 +405,10 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
     private javax.swing.JButton btnAvanzarFecha2;
     private javax.swing.JButton btnRegresar;
     private javax.swing.JButton btnSimularFecha1;
+    private javax.swing.JButton btnSimularFecha2;
+    private javax.swing.JButton btnSimularFecha3;
+    private javax.swing.JButton btnSimularFecha4;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
