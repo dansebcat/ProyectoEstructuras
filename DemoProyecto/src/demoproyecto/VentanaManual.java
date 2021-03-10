@@ -155,7 +155,7 @@ public class VentanaManual extends javax.swing.JFrame {
         jScrollPane7.setViewportView(jlGrupo6);
 
         getContentPane().add(jScrollPane7);
-        jScrollPane7.setBounds(440, 420, 150, 90);
+        jScrollPane7.setBounds(440, 170, 150, 90);
 
         jlGrupo7.setOpaque(false);
         jScrollPane8.setViewportView(jlGrupo7);
@@ -167,7 +167,7 @@ public class VentanaManual extends javax.swing.JFrame {
         jScrollPane9.setViewportView(jlGrupo8);
 
         getContentPane().add(jScrollPane9);
-        jScrollPane9.setBounds(440, 170, 150, 90);
+        jScrollPane9.setBounds(440, 420, 150, 90);
 
         btnRegresar.setText("REGRESAR");
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
@@ -179,6 +179,7 @@ public class VentanaManual extends javax.swing.JFrame {
         btnRegresar.setBounds(620, 480, 160, 30);
 
         btnIniciar.setText("INICIAR CAMPEONATO");
+        btnIniciar.setEnabled(false);
         btnIniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnIniciarActionPerformed(evt);
@@ -333,12 +334,15 @@ public class VentanaManual extends javax.swing.JFrame {
             int i = jlPaises.getSelectedIndex();
 
             paisesA[ca] = jlPaises.getSelectedValue();
-            jlGrupo1.setListData(paisesA);
-            paises[i] = "";
-            jlPaises.setListData(paises);
-            EquiposFaseGrupos.grupoA.addEquipo(new Nodo(new Equipo(paisesA[ca])));
-            ca++;
-            
+            if("".equals(paisesA[ca]) || paisesA[ca] == null){
+                JOptionPane.showMessageDialog(null, "Por favor, Elija un país");
+            }else{
+                jlGrupo1.setListData(paisesA);
+                paises[i] = "";
+                jlPaises.setListData(paises);
+                EquiposFaseGrupos.grupoA.addEquipo(new Nodo(new Equipo(paisesA[ca])));
+                ca++;
+            }
         }else{
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
         }
@@ -351,12 +355,15 @@ public class VentanaManual extends javax.swing.JFrame {
             int i = jlPaises.getSelectedIndex();
 
             paisesE[ce] = jlPaises.getSelectedValue();
+            if("".equals(paisesE[ce]) || paisesE[ce] == null){
+                JOptionPane.showMessageDialog(null, "Por favor, Elija un país");
+            }else{
             jlGrupo5.setListData(paisesE);
             paises[i] = "";
             jlPaises.setListData(paises);
             EquiposFaseGrupos.grupoE.addEquipo(new Nodo(new Equipo(paisesE[ce])));
             ce++;
-            
+            }
         }else{
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
         }
@@ -367,11 +374,15 @@ public class VentanaManual extends javax.swing.JFrame {
             int i = jlPaises.getSelectedIndex();
 
             paisesB[cb] = jlPaises.getSelectedValue();
+            if("".equals(paisesB[cb]) || paisesB[cb] == null){
+                JOptionPane.showMessageDialog(null, "Por favor, Elija un país");
+            }else{
             jlGrupo2.setListData(paisesB);
             paises[i] = "";
             jlPaises.setListData(paises);
             EquiposFaseGrupos.grupoB.addEquipo(new Nodo(new Equipo(paisesB[cb])));
             cb++;
+            }
         }else{
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
         }
@@ -382,11 +393,15 @@ public class VentanaManual extends javax.swing.JFrame {
             int i = jlPaises.getSelectedIndex();
 
             paisesC[cc] = jlPaises.getSelectedValue();
+            if("".equals(paisesC[cc]) || paisesC[cc] == null){
+                JOptionPane.showMessageDialog(null, "Por favor, Elija un país");
+            }else{
             jlGrupo3.setListData(paisesC);
             paises[i] = "";
             jlPaises.setListData(paises);
             EquiposFaseGrupos.grupoC.addEquipo(new Nodo(new Equipo(paisesC[cc])));
             cc++;
+            }
         }else{
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
         }
@@ -397,11 +412,15 @@ public class VentanaManual extends javax.swing.JFrame {
             int i = jlPaises.getSelectedIndex();
 
             paisesD[cd] = jlPaises.getSelectedValue();
+            if("".equals(paisesD[cd]) || paisesD[cd] == null){
+                JOptionPane.showMessageDialog(null, "Por favor, Elija un país");
+            }else{
             jlGrupo4.setListData(paisesD);
             paises[i] = "";
             jlPaises.setListData(paises);
             EquiposFaseGrupos.grupoD.addEquipo(new Nodo(new Equipo(paisesD[cd])));
             cd++;
+            }
         }else{
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
         }
@@ -412,11 +431,15 @@ public class VentanaManual extends javax.swing.JFrame {
             int i = jlPaises.getSelectedIndex();
 
             paisesF[cf] = jlPaises.getSelectedValue();
+            if("".equals(paisesF[cf]) || paisesF[cf] == null){
+                JOptionPane.showMessageDialog(null, "Por favor, Elija un país");
+            }else{
             jlGrupo6.setListData(paisesF);
             paises[i] = "";
             jlPaises.setListData(paises);
             EquiposFaseGrupos.grupoF.addEquipo(new Nodo(new Equipo(paisesF[cf])));
             cf++;
+            }
         }else{
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
         }
@@ -427,11 +450,15 @@ public class VentanaManual extends javax.swing.JFrame {
             int i = jlPaises.getSelectedIndex();
 
             paisesG[cg] = jlPaises.getSelectedValue();
+            if("".equals(paisesG[cg]) || paisesG[cg] == null){
+                JOptionPane.showMessageDialog(null, "Por favor, Elija un país");
+            }else{
             jlGrupo7.setListData(paisesG);
             paises[i] = "";
             jlPaises.setListData(paises);
             EquiposFaseGrupos.grupoG.addEquipo(new Nodo(new Equipo(paisesG[cg])));
             cg++;
+            }
         }else {
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
         }
@@ -442,11 +469,15 @@ public class VentanaManual extends javax.swing.JFrame {
             int i = jlPaises.getSelectedIndex();
 
             paisesH[ch] = jlPaises.getSelectedValue();
+            if("".equals(paisesH[ch]) || paisesH[ch] == null){
+                JOptionPane.showMessageDialog(null, "Por favor, Elija un país");
+            }else{
             jlGrupo8.setListData(paisesH);
             paises[i] = "";
             jlPaises.setListData(paises);
             EquiposFaseGrupos.grupoH.addEquipo(new Nodo(new Equipo(paisesH[ch])));
             ch++;
+            }
         }else{
             JOptionPane.showMessageDialog(null,"No se puede agregar mas equipos");
         }

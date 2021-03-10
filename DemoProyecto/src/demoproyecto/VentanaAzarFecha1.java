@@ -212,9 +212,9 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         jScrollPane9.setBounds(30, 40, 160, 100);
 
         Titulo.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        Titulo.setText("RESULTADOS FECHA 1");
+        Titulo.setText("RESULTADOS FECHAS");
         getContentPane().add(Titulo);
-        Titulo.setBounds(540, 10, 240, 30);
+        Titulo.setBounds(540, 10, 230, 30);
 
         btnSimularFecha2.setText("SIMULAR FECHA 2");
         btnSimularFecha2.setEnabled(false);

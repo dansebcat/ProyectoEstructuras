@@ -177,7 +177,7 @@ public class VentanaFecha1Manual extends javax.swing.JFrame {
         jScrollPane9.setBounds(30, 180, 160, 100);
 
         Titulo.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        Titulo.setText("RESULTADOS FECHA 1");
+        Titulo.setText("RESULTADOS FECHAS");
         getContentPane().add(Titulo);
         Titulo.setBounds(560, 10, 240, 30);
 
