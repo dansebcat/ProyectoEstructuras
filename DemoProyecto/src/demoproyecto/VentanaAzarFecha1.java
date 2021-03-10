@@ -1,6 +1,7 @@
 
 package demoproyecto;
 
+
 import source.*;
 
 /**
@@ -17,12 +18,10 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
     String[] strGrupoF = EquiposFaseGrupos.grupoF.crearString();
     String[] strGrupoG = EquiposFaseGrupos.grupoG.crearString();
     String[] strGrupoH = EquiposFaseGrupos.grupoH.crearString();
-
+    
     public VentanaAzarFecha1() {
         initComponents();
         this.setLocationRelativeTo(null);
-
-        
     }
  void llenarTablitas(){
     String[] strGrupoA1 = EquiposFaseGrupos.grupoA.crearString();
@@ -42,6 +41,10 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         this.jlGrupo7.setListData(strGrupoG1);
         this.jlGrupo8.setListData(strGrupoH1);
  }
+     
+     
+     
+ 
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -104,16 +107,21 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAvanzarFecha2);
-        btnAvanzarFecha2.setBounds(699, 540, 151, 30);
+        btnAvanzarFecha2.setBounds(730, 540, 151, 30);
 
         btnSimularFecha1.setText("SIMULAR FECHA 1");
+        btnSimularFecha1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSimularFecha1MouseClicked(evt);
+            }
+        });
         btnSimularFecha1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSimularFecha1ActionPerformed(evt);
             }
         });
         getContentPane().add(btnSimularFecha1);
-        btnSimularFecha1.setBounds(440, 490, 130, 30);
+        btnSimularFecha1.setBounds(440, 490, 140, 30);
 
         jlGrupo2.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -209,17 +217,34 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         Titulo.setBounds(540, 10, 240, 30);
 
         btnSimularFecha2.setText("SIMULAR FECHA 2");
+        btnSimularFecha2.setEnabled(false);
+        btnSimularFecha2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSimularFecha2MouseClicked(evt);
+            }
+        });
         btnSimularFecha2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSimularFecha2ActionPerformed(evt);
             }
         });
         getContentPane().add(btnSimularFecha2);
-        btnSimularFecha2.setBounds(580, 490, 130, 30);
+        btnSimularFecha2.setBounds(590, 490, 140, 30);
 
         btnSimularFecha3.setText("SIMULAR FECHA 3");
+        btnSimularFecha3.setEnabled(false);
+        btnSimularFecha3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSimularFecha3MouseClicked(evt);
+            }
+        });
+        btnSimularFecha3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSimularFecha3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnSimularFecha3);
-        btnSimularFecha3.setBounds(720, 490, 130, 30);
+        btnSimularFecha3.setBounds(740, 490, 140, 30);
 
         jtxtAreaResultados.setColumns(20);
         jtxtAreaResultados.setRows(5);
@@ -234,10 +259,10 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(34, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(38, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 370, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2))
                 .addGap(32, 32, 32))
         );
         jPanel1Layout.setVerticalGroup(
@@ -251,7 +276,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(440, 40, 410, 440);
+        jPanel1.setBounds(440, 40, 440, 440);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -303,7 +328,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FondoOctavos.jpg"))); // NOI18N
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(0, 0, 900, 590);
+        jLabel10.setBounds(0, 0, 920, 590);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -319,6 +344,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
 
         generarResultados();
         llenarTablitas();
+        
     }//GEN-LAST:event_btnSimularFecha1ActionPerformed
     void generarResultados() {
         String salida = "";
@@ -368,6 +394,30 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         generarResultados();
         llenarTablitas();
     }//GEN-LAST:event_btnSimularFecha2ActionPerformed
+
+    private void btnSimularFecha1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSimularFecha1MouseClicked
+        // TODO add your handling code here:
+        btnSimularFecha1.setEnabled(false);
+        btnSimularFecha2.setEnabled(true);
+    }//GEN-LAST:event_btnSimularFecha1MouseClicked
+
+    private void btnSimularFecha2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSimularFecha2MouseClicked
+        // TODO add your handling code here:
+        btnSimularFecha2.setEnabled(false);
+        btnSimularFecha3.setEnabled(true);
+    }//GEN-LAST:event_btnSimularFecha2MouseClicked
+
+    private void btnSimularFecha3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimularFecha3ActionPerformed
+        // TODO add your handling code here:
+        generarResultados();
+        llenarTablitas();
+    }//GEN-LAST:event_btnSimularFecha3ActionPerformed
+
+    private void btnSimularFecha3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSimularFecha3MouseClicked
+        // TODO add your handling code here:
+        btnSimularFecha3.setEnabled(false);
+        btnAvanzarFecha2.getFocusListeners();
+    }//GEN-LAST:event_btnSimularFecha3MouseClicked
 
     /**
      * @param args the command line arguments
