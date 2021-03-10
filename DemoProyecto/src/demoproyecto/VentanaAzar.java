@@ -53,7 +53,15 @@ public class VentanaAzar extends javax.swing.JFrame {
         jlGrupo8 = new javax.swing.JList<>();
         btnIniciar = new javax.swing.JButton();
         btnRegresar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -69,7 +77,7 @@ public class VentanaAzar extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jlGrupo1);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(30, 10, 160, 100);
+        jScrollPane1.setBounds(30, 40, 160, 100);
 
         jlGrupo2.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -80,7 +88,7 @@ public class VentanaAzar extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jlGrupo2);
 
         getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(30, 130, 160, 100);
+        jScrollPane2.setBounds(30, 170, 160, 100);
 
         jlGrupo3.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -91,7 +99,7 @@ public class VentanaAzar extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jlGrupo3);
 
         getContentPane().add(jScrollPane3);
-        jScrollPane3.setBounds(40, 240, 160, 100);
+        jScrollPane3.setBounds(30, 300, 160, 100);
 
         jlGrupo4.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -102,7 +110,7 @@ public class VentanaAzar extends javax.swing.JFrame {
         jScrollPane4.setViewportView(jlGrupo4);
 
         getContentPane().add(jScrollPane4);
-        jScrollPane4.setBounds(30, 350, 160, 100);
+        jScrollPane4.setBounds(30, 430, 160, 100);
 
         jlGrupo5.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -113,7 +121,7 @@ public class VentanaAzar extends javax.swing.JFrame {
         jScrollPane5.setViewportView(jlGrupo5);
 
         getContentPane().add(jScrollPane5);
-        jScrollPane5.setBounds(560, 20, 160, 100);
+        jScrollPane5.setBounds(560, 40, 160, 100);
 
         jlGrupo6.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -124,7 +132,7 @@ public class VentanaAzar extends javax.swing.JFrame {
         jScrollPane6.setViewportView(jlGrupo6);
 
         getContentPane().add(jScrollPane6);
-        jScrollPane6.setBounds(560, 130, 160, 100);
+        jScrollPane6.setBounds(560, 170, 160, 100);
 
         jlGrupo7.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -135,7 +143,7 @@ public class VentanaAzar extends javax.swing.JFrame {
         jScrollPane7.setViewportView(jlGrupo7);
 
         getContentPane().add(jScrollPane7);
-        jScrollPane7.setBounds(560, 240, 160, 100);
+        jScrollPane7.setBounds(560, 300, 160, 100);
 
         jlGrupo8.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -146,7 +154,7 @@ public class VentanaAzar extends javax.swing.JFrame {
         jScrollPane8.setViewportView(jlGrupo8);
 
         getContentPane().add(jScrollPane8);
-        jScrollPane8.setBounds(560, 350, 160, 100);
+        jScrollPane8.setBounds(560, 430, 160, 100);
 
         btnIniciar.setText("INICIAR CAMPEONATO");
         btnIniciar.addActionListener(new java.awt.event.ActionListener() {
@@ -155,7 +163,7 @@ public class VentanaAzar extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnIniciar);
-        btnIniciar.setBounds(560, 480, 160, 30);
+        btnIniciar.setBounds(310, 490, 160, 30);
 
         btnRegresar.setText("REGRESAR");
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
@@ -164,13 +172,61 @@ public class VentanaAzar extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnRegresar);
-        btnRegresar.setBounds(30, 480, 160, 30);
+        btnRegresar.setBounds(310, 450, 160, 30);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondoMundial6.jpg"))); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("GRUPO A");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(30, 20, 90, 20);
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("GRUPO B");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(30, 150, 80, 20);
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("GRUPO C");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(30, 280, 80, 20);
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("GRUPO D");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(30, 410, 80, 20);
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("GRUPO E");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 750, 530);
+        jLabel2.setBounds(560, 20, 80, 20);
 
-        setSize(new java.awt.Dimension(750, 530));
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("GRUPO F");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(560, 150, 80, 20);
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("GRUPO G");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(560, 280, 80, 20);
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("GRUPO H");
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(560, 410, 80, 20);
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondoMundial6.jpg"))); // NOI18N
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(0, 0, 750, 550);
+
+        setSize(new java.awt.Dimension(750, 550));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -227,7 +283,15 @@ public class VentanaAzar extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnIniciar;
     private javax.swing.JButton btnRegresar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JScrollPane jScrollPane2;
     public javax.swing.JScrollPane jScrollPane3;

@@ -91,7 +91,7 @@ public class Principal extends javax.swing.JFrame {
         numberOne.setVisible(true);
         try {
             for(int i = 0; i<=100; i++ ){
-                Thread.sleep(30);
+                Thread.sleep(15);
                 numberOne.loadingNumber.setText(Integer.toString(i)+"%");
                 numberOne.loadingBar.setValue(i);
                 if(i == 100){

@@ -394,7 +394,7 @@ public class VentanaOctavos extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSemifinalActionPerformed
 
     private void btnRegresar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresar3ActionPerformed
-    VentanaFecha3Manual regresar = new VentanaFecha3Manual();
+    VentanaFecha1Manual regresar = new VentanaFecha1Manual();
         regresar.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnRegresar3ActionPerformed

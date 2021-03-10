@@ -93,8 +93,15 @@ public class VentanaManual extends javax.swing.JFrame {
         btnGrF = new javax.swing.JButton();
         btnGrA = new javax.swing.JButton();
         btnGrE = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -110,7 +117,7 @@ public class VentanaManual extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jlPaises);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(30, 20, 200, 510);
+        jScrollPane1.setBounds(30, 20, 200, 490);
 
         jScrollPane2.setOpaque(false);
 
@@ -118,49 +125,49 @@ public class VentanaManual extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jlGrupo1);
 
         getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(280, 20, 140, 90);
+        jScrollPane2.setBounds(270, 40, 150, 90);
 
         jlGrupo2.setOpaque(false);
         jScrollPane3.setViewportView(jlGrupo2);
 
         getContentPane().add(jScrollPane3);
-        jScrollPane3.setBounds(440, 20, 150, 90);
+        jScrollPane3.setBounds(270, 170, 150, 90);
 
         jlGrupo3.setOpaque(false);
         jScrollPane4.setViewportView(jlGrupo3);
 
         getContentPane().add(jScrollPane4);
-        jScrollPane4.setBounds(610, 20, 150, 90);
+        jScrollPane4.setBounds(270, 300, 150, 90);
 
         jlGrupo4.setOpaque(false);
         jScrollPane5.setViewportView(jlGrupo4);
 
         getContentPane().add(jScrollPane5);
-        jScrollPane5.setBounds(280, 150, 140, 90);
+        jScrollPane5.setBounds(270, 420, 150, 90);
 
         jlGrupo5.setOpaque(false);
         jScrollPane6.setViewportView(jlGrupo5);
 
         getContentPane().add(jScrollPane6);
-        jScrollPane6.setBounds(440, 150, 150, 90);
+        jScrollPane6.setBounds(440, 40, 150, 90);
 
         jlGrupo6.setOpaque(false);
         jScrollPane7.setViewportView(jlGrupo6);
 
         getContentPane().add(jScrollPane7);
-        jScrollPane7.setBounds(610, 150, 150, 90);
+        jScrollPane7.setBounds(440, 420, 150, 90);
 
         jlGrupo7.setOpaque(false);
         jScrollPane8.setViewportView(jlGrupo7);
 
         getContentPane().add(jScrollPane8);
-        jScrollPane8.setBounds(280, 280, 140, 90);
+        jScrollPane8.setBounds(440, 300, 150, 90);
 
         jlGrupo8.setOpaque(false);
         jScrollPane9.setViewportView(jlGrupo8);
 
         getContentPane().add(jScrollPane9);
-        jScrollPane9.setBounds(440, 280, 150, 90);
+        jScrollPane9.setBounds(440, 170, 150, 90);
 
         btnRegresar.setText("REGRESAR");
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
@@ -169,7 +176,7 @@ public class VentanaManual extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnRegresar);
-        btnRegresar.setBounds(280, 430, 160, 30);
+        btnRegresar.setBounds(620, 480, 160, 30);
 
         btnIniciar.setText("INICIAR CAMPEONATO");
         btnIniciar.addActionListener(new java.awt.event.ActionListener() {
@@ -178,89 +185,133 @@ public class VentanaManual extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnIniciar);
-        btnIniciar.setBounds(560, 430, 160, 30);
+        btnIniciar.setBounds(620, 430, 160, 40);
 
-        btnGrC.setText("Group C");
+        btnGrC.setText("Grupo C");
         btnGrC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGrCActionPerformed(evt);
             }
         });
         getContentPane().add(btnGrC);
-        btnGrC.setBounds(611, 320, 90, 30);
+        btnGrC.setBounds(650, 140, 90, 30);
 
-        btnGrG.setText("Group G");
+        btnGrG.setText("Grupo G");
         btnGrG.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGrGActionPerformed(evt);
             }
         });
         getContentPane().add(btnGrG);
-        btnGrG.setBounds(701, 320, 80, 30);
+        btnGrG.setBounds(650, 300, 90, 30);
 
-        btnGrD.setText("Group D");
+        btnGrD.setText("Grupo D");
         btnGrD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGrDActionPerformed(evt);
             }
         });
         getContentPane().add(btnGrD);
-        btnGrD.setBounds(611, 350, 90, 40);
+        btnGrD.setBounds(650, 180, 90, 30);
 
-        btngrH.setText("Group H");
+        btngrH.setText("Grupo H");
         btngrH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btngrHActionPerformed(evt);
             }
         });
         getContentPane().add(btngrH);
-        btngrH.setBounds(701, 350, 80, 40);
+        btngrH.setBounds(650, 340, 90, 30);
 
-        btnGrB.setText("Group B");
+        btnGrB.setText("Grupo B");
         btnGrB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGrBActionPerformed(evt);
             }
         });
         getContentPane().add(btnGrB);
-        btnGrB.setBounds(611, 290, 90, 30);
+        btnGrB.setBounds(650, 100, 90, 30);
 
-        btnGrF.setText("Group F");
+        btnGrF.setText("Grupo F");
         btnGrF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGrFActionPerformed(evt);
             }
         });
         getContentPane().add(btnGrF);
-        btnGrF.setBounds(701, 290, 80, 30);
+        btnGrF.setBounds(650, 260, 90, 30);
 
-        btnGrA.setText("Group A");
+        btnGrA.setText("Grupo  A");
         btnGrA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGrAActionPerformed(evt);
             }
         });
         getContentPane().add(btnGrA);
-        btnGrA.setBounds(611, 260, 90, 30);
+        btnGrA.setBounds(650, 60, 90, 30);
 
-        btnGrE.setText("Group E");
+        btnGrE.setText("Grupo E");
         btnGrE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGrEActionPerformed(evt);
             }
         });
         getContentPane().add(btnGrE);
-        btnGrE.setBounds(701, 260, 80, 30);
+        btnGrE.setBounds(650, 220, 90, 30);
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("GRUPO A");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(270, 20, 70, 20);
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("GRUPO E");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(440, 20, 70, 20);
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("GRUPO B");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(270, 150, 70, 20);
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("GRUPO F");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(440, 150, 70, 20);
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("GRUPO C");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(270, 280, 70, 20);
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("GRUPO G");
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(440, 280, 70, 20);
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("GRUPO D");
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(270, 400, 70, 20);
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("GRUPO H");
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(440, 400, 70, 20);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondoMundial4.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 800, 550);
+        jLabel1.setBounds(0, 0, 810, 550);
 
-        jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(630, 410, 34, 14);
-
-        setSize(new java.awt.Dimension(800, 545));
+        setSize(new java.awt.Dimension(812, 545));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -449,7 +500,14 @@ public class VentanaManual extends javax.swing.JFrame {
     private javax.swing.JButton btnRegresar;
     private javax.swing.JButton btngrH;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;

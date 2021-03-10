@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package demoproyecto;
 
 import source.*;
@@ -56,7 +52,6 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        btnRegresar = new javax.swing.JButton();
         btnAvanzarFecha2 = new javax.swing.JButton();
         btnSimularFecha1 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -83,8 +78,15 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         jtxtAreaResultados = new javax.swing.JTextArea();
         jScrollPane10 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        LabelFondo = new javax.swing.JLabel();
-        btnSimularFecha4 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
 
@@ -95,15 +97,6 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(920, 580));
         getContentPane().setLayout(null);
 
-        btnRegresar.setText("REGRESAR");
-        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegresarActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnRegresar);
-        btnRegresar.setBounds(10, 540, 160, 30);
-
         btnAvanzarFecha2.setText("AVANZAR A OCTAVOS");
         btnAvanzarFecha2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,7 +104,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAvanzarFecha2);
-        btnAvanzarFecha2.setBounds(750, 540, 160, 30);
+        btnAvanzarFecha2.setBounds(699, 540, 151, 30);
 
         btnSimularFecha1.setText("SIMULAR FECHA 1");
         btnSimularFecha1.addActionListener(new java.awt.event.ActionListener() {
@@ -120,7 +113,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnSimularFecha1);
-        btnSimularFecha1.setBounds(410, 490, 160, 30);
+        btnSimularFecha1.setBounds(440, 490, 130, 30);
 
         jlGrupo2.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -131,7 +124,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jlGrupo2);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(230, 10, 160, 100);
+        jScrollPane1.setBounds(30, 170, 160, 100);
 
         jlGrupo3.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -142,7 +135,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jlGrupo3);
 
         getContentPane().add(jScrollPane3);
-        jScrollPane3.setBounds(230, 260, 160, 100);
+        jScrollPane3.setBounds(30, 300, 160, 100);
 
         jlGrupo4.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -153,7 +146,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         jScrollPane4.setViewportView(jlGrupo4);
 
         getContentPane().add(jScrollPane4);
-        jScrollPane4.setBounds(30, 390, 160, 100);
+        jScrollPane4.setBounds(30, 440, 160, 100);
 
         jlGrupo5.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -164,7 +157,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         jScrollPane5.setViewportView(jlGrupo5);
 
         getContentPane().add(jScrollPane5);
-        jScrollPane5.setBounds(30, 130, 160, 100);
+        jScrollPane5.setBounds(220, 40, 160, 100);
 
         jlGrupo6.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -175,7 +168,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         jScrollPane6.setViewportView(jlGrupo6);
 
         getContentPane().add(jScrollPane6);
-        jScrollPane6.setBounds(230, 130, 160, 100);
+        jScrollPane6.setBounds(220, 170, 160, 100);
 
         jlGrupo7.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -186,7 +179,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         jScrollPane7.setViewportView(jlGrupo7);
 
         getContentPane().add(jScrollPane7);
-        jScrollPane7.setBounds(30, 260, 160, 100);
+        jScrollPane7.setBounds(220, 300, 160, 100);
 
         jlGrupo8.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -197,7 +190,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         jScrollPane8.setViewportView(jlGrupo8);
 
         getContentPane().add(jScrollPane8);
-        jScrollPane8.setBounds(230, 390, 160, 100);
+        jScrollPane8.setBounds(220, 440, 160, 100);
 
         jlGrupo1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4" };
@@ -208,30 +201,25 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         jScrollPane9.setViewportView(jlGrupo1);
 
         getContentPane().add(jScrollPane9);
-        jScrollPane9.setBounds(30, 10, 160, 100);
+        jScrollPane9.setBounds(30, 40, 160, 100);
 
         Titulo.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         Titulo.setText("RESULTADOS FECHA 1");
         getContentPane().add(Titulo);
-        Titulo.setBounds(560, 10, 240, 30);
+        Titulo.setBounds(540, 10, 240, 30);
 
-        btnSimularFecha2.setText("SIMULAR FECHA 3");
+        btnSimularFecha2.setText("SIMULAR FECHA 2");
         btnSimularFecha2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSimularFecha2ActionPerformed(evt);
             }
         });
         getContentPane().add(btnSimularFecha2);
-        btnSimularFecha2.setBounds(750, 490, 160, 30);
+        btnSimularFecha2.setBounds(580, 490, 130, 30);
 
-        btnSimularFecha3.setText("SIMULAR FECHA 1");
-        btnSimularFecha3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSimularFecha3ActionPerformed(evt);
-            }
-        });
+        btnSimularFecha3.setText("SIMULAR FECHA 3");
         getContentPane().add(btnSimularFecha3);
-        btnSimularFecha3.setBounds(580, 490, 160, 30);
+        btnSimularFecha3.setBounds(720, 490, 130, 30);
 
         jtxtAreaResultados.setColumns(20);
         jtxtAreaResultados.setRows(5);
@@ -245,12 +233,12 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 344, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2))
-                .addContainerGap(86, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(34, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(32, 32, 32))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -263,20 +251,59 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(460, 40, 450, 440);
+        jPanel1.setBounds(440, 40, 410, 440);
 
-        LabelFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FondoOctavos.jpg"))); // NOI18N
-        getContentPane().add(LabelFondo);
-        LabelFondo.setBounds(0, -10, 920, 580);
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("GRUPO A");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(30, 20, 110, 20);
 
-        btnSimularFecha4.setText("SIMULAR FECHA 1");
-        btnSimularFecha4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSimularFecha4ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnSimularFecha4);
-        btnSimularFecha4.setBounds(480, 490, 160, 30);
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("GRUPO B");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(30, 150, 70, 20);
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("GRUPO C");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(30, 280, 70, 20);
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("GRUPO D");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(30, 420, 70, 20);
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("GRUPO E");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(220, 20, 60, 20);
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("GRUPO F");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(220, 150, 60, 20);
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("GRUPO G");
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(220, 280, 70, 20);
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("GRUPO H");
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(220, 420, 70, 20);
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FondoOctavos.jpg"))); // NOI18N
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(0, 0, 900, 590);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -337,25 +364,10 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         EquiposFaseGrupos.ordenarGrupos();
         jTextArea1.setText(EquiposFaseGrupos.imprimirGrupos());
     }
-    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
-        VentanaAzar regresar = new VentanaAzar();
-        regresar.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_btnRegresarActionPerformed
-
     private void btnSimularFecha2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimularFecha2ActionPerformed
         generarResultados();
         llenarTablitas();
     }//GEN-LAST:event_btnSimularFecha2ActionPerformed
-
-    private void btnSimularFecha3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimularFecha3ActionPerformed
-        generarResultados();
-        llenarTablitas();
-    }//GEN-LAST:event_btnSimularFecha3ActionPerformed
-
-    private void btnSimularFecha4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimularFecha4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSimularFecha4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -400,15 +412,21 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel LabelFondo;
     private javax.swing.JLabel Titulo;
     private javax.swing.JButton btnAvanzarFecha2;
-    private javax.swing.JButton btnRegresar;
     private javax.swing.JButton btnSimularFecha1;
     private javax.swing.JButton btnSimularFecha2;
     private javax.swing.JButton btnSimularFecha3;
-    private javax.swing.JButton btnSimularFecha4;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;

@@ -394,7 +394,7 @@ public class VentanaAzarOctavos extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSemifinalActionPerformed
 
     private void btnRegresar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresar3ActionPerformed
-    VentanaAzarFecha3 regresar = new VentanaAzarFecha3();
+    VentanaAzarFecha1 regresar = new VentanaAzarFecha1();
         regresar.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnRegresar3ActionPerformed
