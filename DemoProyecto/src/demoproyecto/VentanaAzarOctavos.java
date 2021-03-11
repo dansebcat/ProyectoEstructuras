@@ -254,7 +254,6 @@ public class VentanaAzarOctavos extends javax.swing.JFrame {
         Semi1.setEditable(false);
 
         btnSalir.setText("SALIR");
-        btnSalir.setEnabled(false);
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalirActionPerformed(evt);
@@ -530,12 +529,12 @@ public class VentanaAzarOctavos extends javax.swing.JFrame {
         jTextField18.setText(FaseFinal.Granfinal[0]);
         jTextField19.setText(FaseFinal.Granfinal[1]);
         txtCampeon.setText(FaseFinal.campeon[0]);
+        JOptionPane.showMessageDialog(null, "!CAMPEÓN¡\n"+FaseFinal.campeon[0]);
     }//GEN-LAST:event_btnFinalActionPerformed
 
     private void btnFinalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFinalMouseClicked
         // TODO add your handling code here:
         btnFinal.setEnabled(false);
-        btnSalir.setEnabled(true);
     }//GEN-LAST:event_btnFinalMouseClicked
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
