@@ -22,6 +22,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
     public VentanaAzarFecha1() {
         initComponents();
         this.setLocationRelativeTo(null);
+        llenarTablitas();
     }
  void llenarTablitas(){
     String[] strGrupoA1 = EquiposFaseGrupos.grupoA.crearString();
@@ -107,7 +108,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAvanzarFecha2);
-        btnAvanzarFecha2.setBounds(730, 540, 141, 30);
+        btnAvanzarFecha2.setBounds(730, 540, 151, 30);
 
         btnSimularFecha1.setText("SIMULAR FECHA 1");
         btnSimularFecha1.addMouseListener(new java.awt.event.MouseAdapter() {

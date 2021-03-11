@@ -12,6 +12,7 @@ public class VentanaSeleccionarModo extends javax.swing.JFrame {
      */
     public VentanaSeleccionarModo() {
         initComponents();
+        btnIngresoManual.setVisible(false);
     }
 
     /**
@@ -43,6 +44,7 @@ public class VentanaSeleccionarModo extends javax.swing.JFrame {
         btnIngresoAzar.setBounds(320, 190, 200, 50);
 
         btnIngresoManual.setText("INGRESO MANUAL");
+        btnIngresoManual.setEnabled(false);
         btnIngresoManual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnIngresoManualActionPerformed(evt);
