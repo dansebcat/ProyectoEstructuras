@@ -30,12 +30,12 @@ public class ListaEquipos {
         listaEquipos[15]=  new Equipo("Nigeria");
         listaEquipos[16]=  new Equipo("Brazil");
         listaEquipos[17]=  new Equipo("Suiza");
-        listaEquipos[18]=  new Equipo("Costa Rica");
+        listaEquipos[18]=  new Equipo("CostaRica");
         listaEquipos[19]=  new Equipo("Serbia");
         listaEquipos[20]=  new Equipo("Alemania");
         listaEquipos[21]=  new Equipo("México");
         listaEquipos[22]=  new Equipo("Suecia");
-        listaEquipos[23]=  new Equipo("Corea del Sur");
+        listaEquipos[23]=  new Equipo("CoreaDelSur");
         listaEquipos[24]=  new Equipo("Bélgica");
         listaEquipos[25]=  new Equipo("Panamá");
         listaEquipos[26]=  new Equipo("Túnez");

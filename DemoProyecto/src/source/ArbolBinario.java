@@ -1,6 +1,8 @@
 
 package source;
 
+import java.util.StringTokenizer;
+
 /**
  
  *                   *
@@ -12,7 +14,7 @@ public class ArbolBinario {
     String niveles[];
 //constructor del arbol para octavos
     public ArbolBinario() {
-        raiz = new NodoArbol("N/A");
+        raiz = new NodoArbol("N/A11");
     }
     
     void llenarArbol(NodoArbol nodo,int cont){
@@ -41,21 +43,42 @@ public class ArbolBinario {
     void crearString(){
         
     }
-      public void imprimirNivel() {
-        niveles = new String[5];
-
+      public String[] imprimirNivel() {
+        niveles = new String[5]; // equipo1 equipo2 equipo3 
+        // brazil finlandia equipo3 equioi4
+        String arbol="";
         imprimirNivel(raiz, 0);
-        for (int i = 0; i < niveles.length; i++) {
-            System.out.println(niveles[i] + " En nivel: " + i);
-        }
+        
+          for (int i = 0; i < 5; i++) {
+              arbol+=niveles[i];
+          }
+          System.out.println(arbol);
+          StringTokenizer token = new StringTokenizer(arbol," ", false);
+          String [] octavosString = new String[31];
+          for (int i = 0; i < 31; i++) {
+              octavosString[i]=token.nextToken();
+          }
+          
+        return octavosString;
     }
-
+    
     private void imprimirNivel(NodoArbol pivote, int nivel2) {
         if (pivote != null) {
-            niveles[nivel2] = pivote.nombreEquipo+ ", " + ((niveles[nivel2] != null) ? niveles[nivel2] : "");
+            niveles[nivel2] = pivote.nombreEquipo+ " " + ((niveles[nivel2] != null) ? niveles[nivel2] : "");
             imprimirNivel(pivote.hijoDer, nivel2 + 1);
             imprimirNivel(pivote.hijoIzq, nivel2 + 1);
         }
+    }
+    private void LlenarArbol(NodoArbol pivote, int nivel2) {
+        if (pivote != null) {
+            niveles[nivel2] = pivote.nombreEquipo+ " " + ((niveles[nivel2] != null) ? niveles[nivel2] : "");
+            imprimirNivel(pivote.hijoDer, nivel2 + 1);
+            imprimirNivel(pivote.hijoIzq, nivel2 + 1);
+        }
+    }
+    
+    public void insertar(NodoArbol nodo){
+        
     }
     
     public static void main(String[] args) {

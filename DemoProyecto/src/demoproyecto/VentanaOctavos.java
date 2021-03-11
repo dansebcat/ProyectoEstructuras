@@ -383,6 +383,10 @@ public class VentanaOctavos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnOctavosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOctavosActionPerformed
+        
+        
+        
+      
     }//GEN-LAST:event_btnOctavosActionPerformed
 
     private void btnCuartosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuartosActionPerformed

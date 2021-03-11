@@ -77,7 +77,7 @@ public class VentanaFecha1Manual extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAvanzarOctavos);
-        btnAvanzarOctavos.setBounds(730, 540, 151, 30);
+        btnAvanzarOctavos.setBounds(730, 540, 141, 30);
 
         btnSimularFecha1.setText("SIMULAR FECHA 1");
         btnSimularFecha1.addActionListener(new java.awt.event.ActionListener() {
