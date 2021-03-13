@@ -102,7 +102,6 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         btnAvanzarFecha2.setText("AVANZAR A OCTAVOS");
-        btnAvanzarFecha2.setEnabled(false);
         btnAvanzarFecha2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAvanzarFecha2ActionPerformed(evt);
@@ -355,21 +354,21 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
             resultados[i] = (int) (Math.random() * 6);
 
         }
-        salida += "\tPartidos Grupo A\n" + strGrupoA[0] + "\t" + resultados[0] + "\t" + strGrupoA[1] + "\t" + resultados[1] + "\n";
+        salida += "\tartidos Grupo A\n" + strGrupoA[0] + "\t" + resultados[0] + "\t" + strGrupoA[1] + "\t" + resultados[1] + "\n";
         salida += strGrupoA[2] + "\t" + resultados[2] + "\t" + strGrupoA[3] + "\t" + resultados[3] + "\n";
-        salida += "\n\tPartidos Grupo B\n" + strGrupoB[0] + "\t" + resultados[4] + "\t" + strGrupoB[1] + "\t" + resultados[5] + "\n";
+        salida += "\t\nPartidos Grupo B\n" + strGrupoB[0] + "\t" + resultados[4] + "\t" + strGrupoB[1] + "\t" + resultados[5] + "\n";
         salida += strGrupoB[2] + "\t" + resultados[6] + "\t" + strGrupoB[3] + "\t" + resultados[7] + "\n";
-        salida += "\n\tPartidos Grupo C\n" + strGrupoC[0] + "\t" + resultados[8] + "\t" + strGrupoC[1] + "\t" + resultados[9] + "\n";
+        salida += "\t\nPartidos Grupo C\n" + strGrupoC[0] + "\t" + resultados[8] + "\t" + strGrupoC[1] + "\t" + resultados[9] + "\n";
         salida += strGrupoC[2] + "\t" + resultados[10] + "\t" + strGrupoC[3] + "\t" + resultados[11] + "\n";
-        salida += "\n\tPartidos Grupo D\n" + strGrupoD[0] + "\t" + resultados[12] + "\t" + strGrupoD[1] + "\t" + resultados[13] + "\n";
+        salida += "\t\nPartidos Grupo D\n" + strGrupoD[0] + "\t" + resultados[12] + "\t" + strGrupoD[1] + "\t" + resultados[13] + "\n";
         salida += strGrupoD[2] + "\t" + resultados[14] + "\t" + strGrupoD[3] + "\t" + resultados[15] + "\n";
-        salida += "\n\tPartidos Grupo E\n" + strGrupoE[0] + "\t" + resultados[16] + "\t" + strGrupoE[1] + "\t" + resultados[17] + "\n";
+        salida += "\t\nPartidos Grupo E\n" + strGrupoE[0] + "\t" + resultados[16] + "\t" + strGrupoE[1] + "\t" + resultados[17] + "\n";
         salida += strGrupoE[2] + "\t" + resultados[18] + "\t" + strGrupoE[3] + "\t" + resultados[19] + "\n";
-        salida += "\n\tPartidos Grupo F\n" + strGrupoF[0] + "\t" + resultados[20] + "\t" + strGrupoF[1] + "\t" + resultados[21] + "\n";
+        salida += "\t\nPartidos Grupo F\n" + strGrupoF[0] + "\t" + resultados[20] + "\t" + strGrupoF[1] + "\t" + resultados[21] + "\n";
         salida += strGrupoF[2] + "\t" + resultados[22] + "\t" + strGrupoF[3] + "\t" + resultados[23] + "\n";
-        salida += "\n\tPartidos Grupo G\n" + strGrupoG[0] + "\t" + resultados[24] + "\t" + strGrupoG[1] + "\t" + resultados[25] + "\n";
+        salida += "\t\nPartidos Grupo G\n" + strGrupoG[0] + "\t" + resultados[24] + "\t" + strGrupoG[1] + "\t" + resultados[25] + "\n";
         salida += strGrupoG[2] + "\t" + resultados[26] + "\t" + strGrupoG[3] + "\t" + resultados[27] + "\n";
-        salida += "\n\tPartidos Grupo H\n" + strGrupoH[0] + "\t" + resultados[28] + "\t" + strGrupoH[1] + "\t" + resultados[29] + "\n";
+        salida += "\t\nPartidos Grupo H\n" + strGrupoH[0] + "\t" + resultados[28] + "\t" + strGrupoH[1] + "\t" + resultados[29] + "\n";
         salida += strGrupoH[2] + "\t" + resultados[30] + "\t" + strGrupoH[3] + "\t" + resultados[31] + "\n";
         this.jtxtAreaResultados.setText(salida);
         EquiposFaseGrupos.grupoA.ingresarResultados(resultados[0], resultados[1], strGrupoA[0], strGrupoA[1]);
@@ -418,7 +417,7 @@ public class VentanaAzarFecha1 extends javax.swing.JFrame {
     private void btnSimularFecha3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSimularFecha3MouseClicked
         // TODO add your handling code here:
         btnSimularFecha3.setEnabled(false);
-        btnAvanzarFecha2.setEnabled(true);
+        btnAvanzarFecha2.getFocusListeners();
     }//GEN-LAST:event_btnSimularFecha3MouseClicked
 
     /**

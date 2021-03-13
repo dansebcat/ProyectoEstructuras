@@ -519,6 +519,7 @@ public class VentanaAzarOctavos extends javax.swing.JFrame {
         // TODO add your handling code here:
         btnSemifinal.setEnabled(false);
         btnFinal.setEnabled(true);
+        
     }//GEN-LAST:event_btnSemifinalMouseClicked
 
     private void btnFinalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalActionPerformed
@@ -534,7 +535,6 @@ public class VentanaAzarOctavos extends javax.swing.JFrame {
     private void btnFinalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFinalMouseClicked
         // TODO add your handling code here:
         btnFinal.setEnabled(false);
-        btnCuartos.setVisible(false);
     }//GEN-LAST:event_btnFinalMouseClicked
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
